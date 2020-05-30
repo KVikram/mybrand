@@ -1,0 +1,32 @@
+<mat-grid-list cols="4" gutterSize="0px" rowHeight="fit" class="home">
+  
+<mat-grid-tile [colspan]="4" [rowspan]="2" class="add-bg-img" >
+<app-about></app-about>
+</mat-grid-tile>
+<mat-divider></mat-divider>
+
+<mat-grid-tile
+    [colspan]="4"
+    [rowspan]="1"
+    >
+two
+</mat-grid-tile>
+<mat-divider></mat-divider>
+
+<mat-grid-tile
+    [colspan]="4"
+    [rowspan]="1"
+    [style.background]="'#121212'">
+  three
+</mat-grid-tile>
+<mat-divider></mat-divider>
+
+<mat-grid-tile
+    [colspan]="4"
+    [rowspan]="1"
+    [style.background]="'#121212'">
+  four
+</mat-grid-tile>
+<mat-divider></mat-divider>
+
+</mat-grid-list>

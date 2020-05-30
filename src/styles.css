@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/purple-green.css";
+
+html, body { height: 100%;background: rgb(41, 39, 39);color: #fff; }
+html, body { margin: 0; font-family: 'Source Code Pro', monospace; }
+
+mat-icon {
+    cursor: pointer;
+}

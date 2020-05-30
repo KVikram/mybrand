@@ -1,0 +1,10 @@
+.profile-header-image {
+    background-image: url('src/assets/images/65C29B51-65C3-401C-A656-828D9C7ABB1F_1_105_c.jpeg');
+    background-size: cover;
+  }
+.profile-card-bg{
+    background-color: rgba(1, 39, 11, 0.73);
+  }
+.share-icon {
+    padding: 0 14px;
+}
