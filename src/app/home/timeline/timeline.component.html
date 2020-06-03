@@ -1,0 +1,73 @@
+<mat-card> 
+<mat-card-header>
+  <mat-card-title > Work Experience </mat-card-title>
+  <mat-icon>timeline</mat-icon> 
+</mat-card-header>  
+</mat-card>
+<mat-divider></mat-divider>
+
+<mat-vertical-stepper #stepper>
+
+	<!-- <ng-template matStepperIcon="edit">
+		<mat-icon>work</mat-icon>
+	</ng-template>
+
+	<ng-template matStepperIcon="number">
+		<mat-icon>work</mat-icon>
+	</ng-template>
+
+	<ng-template matStepperIcon="done">
+		<mat-icon>work</mat-icon>
+	</ng-template> -->
+
+	<ng-template matStepperIcon="number" let-index="index">
+		<div>
+			<mat-chip-list>
+				<mat-chip color="accent" selected>
+					<b> {{workTimeline.work[index].startDate | date:'yyy'}}  </b>
+				</mat-chip>
+			</mat-chip-list>
+		</div>
+	</ng-template>
+
+	<ng-template matStepperIcon="edit" let-index="index">
+		<div>
+			<mat-chip-list>
+				<mat-chip color="accent" selected>
+					<b> {{workTimeline.work[index].startDate | date:'yyy'}}  </b>
+				</mat-chip>
+			</mat-chip-list>
+		</div>
+	</ng-template>
+
+	<ng-template matStepperIcon="done" let-index="index">
+		<div>
+			<mat-chip-list>
+				<mat-chip color="accent" selected>
+					<b> {{workTimeline.work[index].startDate | date:'yyy'}}  </b>
+				</mat-chip>
+			</mat-chip-list>
+		</div>
+	</ng-template>
+
+<mat-step  *ngFor="let work of workTimeline.work; let i = index">
+	<ng-template matStepLabel>
+		<!-- <b> {{work.startDate | date:'yyy'}} </b> -->
+		<mat-card>
+			<mat-card-header>
+				<mat-card-title>
+					<!-- <mat-chip-list>
+						<mat-chip color="accent" selected>
+							<b> {{work.startDate | date:'yyy'}} </b>
+						</mat-chip>
+					</mat-chip-list> -->
+					{{work.position}} 
+					<!-- <span > {{work.position}} </span> -->
+				</mat-card-title>
+				<mat-card-subtitle>@{{work.company}}</mat-card-subtitle>
+			</mat-card-header>
+		</mat-card>
+	</ng-template>
+	<p>{{work.summary}}</p>
+</mat-step>
+</mat-vertical-stepper>

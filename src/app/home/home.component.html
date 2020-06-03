@@ -1,32 +1,47 @@
-<mat-grid-list cols="4" gutterSize="0px" rowHeight="fit" class="home">
-  
-<mat-grid-tile [colspan]="4" [rowspan]="2" class="add-bg-img" >
-<app-about></app-about>
-</mat-grid-tile>
-<mat-divider></mat-divider>
+<mat-grid-list cols="4" gutterSize="0px" class="home">
+	<mat-grid-tile [colspan]="4" [rowspan]="1" class="add-bg-img">
+		<app-about></app-about>
+	</mat-grid-tile>
+	<mat-divider></mat-divider>
 
-<mat-grid-tile
-    [colspan]="4"
-    [rowspan]="1"
-    >
-two
-</mat-grid-tile>
-<mat-divider></mat-divider>
+	<mat-grid-tile [colspan]="4" [rowspan]="1">
+		<mat-card matRipple>Simple card </mat-card>
+		<!-- <mat-card *ngFor="let tech of techStack.skills">
+			<mat-card-title>
+				{{tech.name}}
+			</mat-card-title>
+			<mat-card-content>
+				<div>Level : {{tech.level}}</div>
+				
+				<div *ngIf="tech.rating==5">
+					<span *ngFor="let i of [].constructor(5)"><mat-icon >star</mat-icon></span>
+				</div>
 
-<mat-grid-tile
-    [colspan]="4"
-    [rowspan]="1"
-    [style.background]="'#121212'">
-  three
-</mat-grid-tile>
-<mat-divider></mat-divider>
+				<div *ngIf="(tech.rating>0) && (tech.rating<5) && (tech.rating%1==0)">
+					<span *ngFor="let i of [].constructor(tech.rating)"><mat-icon >star</mat-icon></span>
+				</div>
 
-<mat-grid-tile
-    [colspan]="4"
-    [rowspan]="1"
-    [style.background]="'#121212'">
-  four
-</mat-grid-tile>
-<mat-divider></mat-divider>
+				<div *ngIf="(tech.rating>0) && (tech.rating<5) && (tech.rating%1!=0)">
+					<span *ngFor="let i of [].constructor(((tech.rating*10/5)-1)/2)"><mat-icon >star</mat-icon></span>
+          <span><mat-icon>star_half</mat-icon></span>
+          <span *ngFor="let i of [].constructor(4-(((tech.rating*10/5)-1)/2))"><mat-icon>star_outline</mat-icon></span>
+				</div>
 
+        <div *ngIf="tech.rating==0">
+					<span *ngFor="let i of [].constructor(5)"><mat-icon>star_outline</mat-icon></span>
+				</div>
+			</mat-card-content>
+		</mat-card> -->
+	</mat-grid-tile>
+	<mat-divider></mat-divider>
+
+	<mat-grid-tile [colspan]="4" [rowspan]="2">
+		<app-timeline></app-timeline>
+	</mat-grid-tile>
+	<mat-divider></mat-divider>
+
+	<mat-grid-tile [colspan]="4" [rowspan]="1" [style.background]="'#121212'">
+		four
+	</mat-grid-tile>
+	<mat-divider></mat-divider>
 </mat-grid-list>

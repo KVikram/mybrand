@@ -1,0 +1,40 @@
+{
+    "work": [
+      {
+        "company": "Tata Consultancy Services (TCS)",
+        "position": "Assistant Consultant",
+        "website": "https://www.tcs.com/",
+        "startDate": "2020-01-01",
+        "endDate": "",
+        "summary": "Currently in the role of a Technical architect working for a major automotive client project.This involves building,designing software and bringing architectural changes to the existing legacy applications and make sure their integration with other applications in the landscape runs smooth.My responsibilities include project delivery,HLD,LLD,design specification,data migration,transition steps,guiding development team,advising on business decisions/implications to the client,proposing new alternative solutions for business critical operations and bringing new business opportunities.",
+        "highlights": []
+      },
+      {
+        "company": "Tata Consultancy Services (TCS)",
+        "position": "IT Analyst",
+        "website": "https://www.tcs.com/",
+        "startDate": "2017-07-01",
+        "endDate": "2019-12-31",
+        "summary": "After successfully upgrading a legacy application persistence layer to a modern robust and scalable ORM i.e EclipseLink 2.6.3, I handle the maintenance and core development of the application to sustain the heavy load & usage with increase in growth of sales of my client's company.I also indulge in various activities in the upcoming projects from my client like analysis,design, estimation & implementation of it. In addition to that I handle a team of 15+ members in delivering projects.",
+        "highlights": []
+      },
+      {
+        "company": "Tata Consultancy Services (TCS)",
+        "position": "System Engineer",
+        "website": "https://www.tcs.com/",
+        "startDate": "2016-06-23",
+        "endDate": "2017-06-30",
+        "summary": "My responsibilities include to migrate a web based application built with Struts 1.x framework to Spring MVC 4 with rest services & Angular JS at front end level.Also co-ordinate team members with technical guidance and mentoring new joiners in both functional and technical level.Started migrating an application running on Eclipse link 2.3 with legacy framework to latest edition of Eclipse Link 2.6.3 along with JPA 2 for enhancing persistence layer for better performance and usage for the users.",
+        "highlights": []
+      },
+      {
+        "company": "Tata Consultancy Services (TCS)",
+        "position": "Assistant System Engineer",
+        "website": "https://www.tcs.com/",
+        "startDate": "2014-06-23",
+        "endDate": "2016-06-22",
+        "summary": "Started my career in TCS as J2EE developer on a web based application built with Struts 1.x framework.As a part of my work I am at present migrating our application to Spring MVC 4 with rest services & Angular JS at front end (UI) level.",
+        "highlights": []
+      }
+    ]
+  }
