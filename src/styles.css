@@ -5,6 +5,16 @@
 html, body { height: 100%;background: rgb(41, 39, 39);color: #fff; }
 html, body { margin: 0; font-family: 'Source Code Pro', monospace; }
 
+/* To make curosr pointer for mat icons */
 mat-icon {
     cursor: pointer;
 }
+
+/*
+Crazy root hack to keep gap/padding between
+mat-step-icon & mat-step-label in the timeline.component.hmtl
+NOTE: It won't work unless it's in root css..!  
+*/
+.mat-step-header .mat-step-label{
+    padding-left:12px;
+  }
