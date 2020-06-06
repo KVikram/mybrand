@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
-# Live site
+## Live site status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/87f74a74-d998-41dd-a261-83047fc8d700/deploy-status)](https://app.netlify.com/sites/vikramkadiam/deploys)
 
