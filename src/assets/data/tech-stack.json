@@ -1,0 +1,204 @@
+{
+	"skills": [
+		{
+			"name": "Angular Js",
+			"level": "Expert",
+			"rating": 5,
+			"yearsOfExperience": 6,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-angularjs-100.png"
+		},
+		{
+			"name": "Angular",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 4,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-angularjs-100.png"
+		},
+		{
+			"name": "Java/J2EE",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 6,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-java-100.png"
+		},
+		{
+			"name": "Javascript",
+			"level": "Expert",
+			"rating": 5,
+			"yearsOfExperience": 6,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-javascript-100.png"
+		},
+		{
+			"name": "Hibernate",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 4,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/hibernate_icon_whitebkg_256px.png"
+		},
+		{
+			"name": "Eclipselink",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 5,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/Eclipselink.png"
+		},
+		{
+			"name": "HTML 5",
+			"level": "Expert",
+			"rating": 5,
+			"yearsOfExperience": 6,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-html-5-100.png"
+		},
+		{
+			"name": "CSS 3",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 5,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-css3-100.png"
+		},
+		{
+			"name": "SQL",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 6,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-sql-100.png"
+		},
+		{
+			"name": "Spring MVC",
+			"level": "Expert",
+			"rating": 5,
+			"yearsOfExperience": 6,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-spring-logo-100.png"
+		},
+		{
+			"name": "Spring Boot",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 3,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/spring-boot-logo.png"
+		},
+		{
+			"name": "Microservices",
+			"level": "Intermediate",
+			"rating": 3,
+			"yearsOfExperience": 2,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/microservices.png"
+		},
+		{
+			"name": "Git",
+			"level": "Intermediate",
+			"rating": 3,
+			"yearsOfExperience": 2,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-git-100.png"
+		},
+		{
+			"name": "DevOps",
+			"level": "Intermediate",
+			"rating": 3,
+			"yearsOfExperience": 4,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-wrench-100.png"
+		},
+		{
+			"name": "Design Patterns",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 5,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-design-100.png"
+		},
+		{
+			"name": "PWA",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 4,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/PWA.jpeg"
+		},
+		{
+			"name": "Cloud platform",
+			"level": "Intermediate",
+			"rating": 3,
+			"yearsOfExperience": 3,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-google-cloud-platform-100.png"
+		},
+		{
+			"name": "RDBMS",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 5,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-oracle-logo-100.png"
+		},
+		{
+			"name": "My SQL",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 4,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-mysql-100.png"
+		},
+		{
+			"name": "Nodejs",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 4,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-nodejs-100.png"
+		},
+		{
+			"name": "Bootstrap",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 5,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-bootstrap-100.png"
+		},
+		{
+			"name": "JPA",
+			"level": "Expert",
+			"rating": 5,
+			"yearsOfExperience": 4,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/hibernate_icon_whitebkg_256px.png"
+		},
+		{
+			"name": "Typescript",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 4,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-typescript-100.png"
+		},
+		{
+			"name": "XML/JSON",
+			"level": "Advanced",
+			"rating": 4,
+			"yearsOfExperience": 6,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-xml-file-100.png"
+		},
+		{
+			"name": "RESTful APIs",
+			"level": "Expert",
+			"rating": 5,
+			"yearsOfExperience": 6,
+			"keywords": [],
+			"icon": "assets/icons/tech-icons/icons8-rest-api-100.png"
+		}
+	]
+}

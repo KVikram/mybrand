@@ -15,6 +15,7 @@ import { AboutComponent, ShareMenuSheet } from "./home/about/about.component";
 import { TimelineComponent } from "./home/timeline/timeline.component";
 import { STEPPER_GLOBAL_OPTIONS } from "@angular/cdk/stepper";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { TechstackComponent } from './home/techstack/techstack.component';
 
 @NgModule({
 	declarations: [
@@ -25,6 +26,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 		AboutComponent,
 		ShareMenuSheet,
 		TimelineComponent,
+		TechstackComponent,
 	],
 	imports: [
 		BrowserModule,
