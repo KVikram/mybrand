@@ -1,18 +1,30 @@
-  <mat-card class="profile-card-bg">
-    <mat-card-header>
-      <div mat-card-avatar class="profile-header-image"></div>
-      <mat-card-title >
-        <span matBadge="VK" matBadgeOverlap="false" matBadgeColor="accent">{{name}}</span>
-      </mat-card-title>
-      <span> <mat-icon class="share-icon" (click)="openShareSheet()">share</mat-icon> </span> 
-      <mat-card-subtitle>{{title}}</mat-card-subtitle>
-    </mat-card-header>
-   <!--  <img mat-card-image src="assets/images/6FA036AA-EC2C-4FAF-A37D-8E2C3DAB5CE8.jpeg" alt="Technologies"> -->
-    <mat-card-content>
-      <p>  {{summary}}   </p>
-    </mat-card-content>
-    <!-- <mat-card-actions>
+<mat-card>
+	<mat-card-header>
+		<div mat-card-avatar class="profile-header-image"></div>
+		<mat-card-title>
+			<span matBadge="VK" matBadgeOverlap="false" matBadgeColor="accent">{{
+				name
+			}}</span>
+		</mat-card-title>
+		<span>
+			<mat-icon class="share-icon" (click)="openShareSheet()">share</mat-icon>
+		</span>
+		<mat-card-subtitle>{{ title }}</mat-card-subtitle>
+	</mat-card-header>
+	<!--  <img mat-card-image src="assets/images/6FA036AA-EC2C-4FAF-A37D-8E2C3DAB5CE8.jpeg" alt="Technologies"> -->
+	<mat-card-content>
+		<p>{{ summary }}</p>
+		<a href="https://stackoverflow.com/users/4316707/ngcoder" rel="noreferrer"
+			><img
+				src="https://stackoverflow.com/users/flair/4316707.png?theme=dark"
+				width="208"
+				height="58"
+				alt="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
+				title="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
+		/></a>
+	</mat-card-content>
+	<!-- <mat-card-actions>
       <button mat-button>LIKE</button>
       <button mat-button>SHARE</button>
     </mat-card-actions> -->
-  </mat-card>
+</mat-card>
