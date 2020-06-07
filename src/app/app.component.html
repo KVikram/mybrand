@@ -1,5 +1,10 @@
-<app-header></app-header>
+<div
+	class="mat-app-background basic-container"
+	[class.mybrand-dark-theme]="isDarkModeOn"
+>
+	<app-header></app-header>
 
-<router-outlet></router-outlet>
+	<router-outlet></router-outlet>
 
-<app-footer></app-footer>
+	<app-footer></app-footer>
+</div>

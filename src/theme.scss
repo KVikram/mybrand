@@ -1,0 +1,42 @@
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$mybrand-app-primary: mat-palette($mat-green, A400);
+$mybrand-app-accent: mat-palette($mat-grey, 800, A100, A400);
+$mybrand-app-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$mybrand-app-theme: mat-light-theme(
+	$mybrand-app-primary,
+	$mybrand-app-accent,
+	$mybrand-app-warn
+);
+
+.mybrand-light-theme {
+	@include angular-material-theme($mybrand-app-theme);
+}
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($mybrand-app-theme);
+
+$mybrand-app-dark-primary: mat-palette($mat-green);
+$mybrand-app-dark-accent: mat-palette($mat-grey, A200, A100, A400);
+$mybrand-app-dark-warn: mat-palette($mat-deep-orange);
+$mybrand-app-dark-theme: mat-dark-theme(
+	$mybrand-app-dark-primary,
+	$mybrand-app-dark-accent,
+	$mybrand-app-dark-warn
+);
+.mybrand-dark-theme {
+	@include angular-material-theme($mybrand-app-dark-theme);
+}

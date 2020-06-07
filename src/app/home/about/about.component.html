@@ -2,7 +2,7 @@
 	<mat-card-header>
 		<div mat-card-avatar class="profile-header-image"></div>
 		<mat-card-title>
-			<span matBadge="VK" matBadgeOverlap="false" matBadgeColor="accent">{{
+			<span matBadge="VK" matBadgeOverlap="false" matBadgeColor="primary">{{
 				name
 			}}</span>
 		</mat-card-title>
@@ -16,7 +16,7 @@
 		<p>{{ summary }}</p>
 		<a href="https://stackoverflow.com/users/4316707/ngcoder" rel="noreferrer"
 			><img
-				src="https://stackoverflow.com/users/flair/4316707.png?theme=dark"
+				[src]="soThemeURL"
 				width="208"
 				height="58"
 				alt="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers"

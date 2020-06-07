@@ -1,18 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-import { SvgIconService } from '../services/svg-icon.service';
+import { Component, OnInit } from "@angular/core";
+import { SvgIconService } from "../services/svg-icon.service";
+import { ThemeService } from "../services/theme.service";
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+	selector: "app-header",
+	templateUrl: "./header.component.html",
+	styleUrls: ["./header.component.css"],
 })
 export class HeaderComponent implements OnInit {
+	toggleDarkMode: boolean;
 
-  constructor(private svgIcons:SvgIconService) {
-    this.svgIcons.init();
-   }
+	constructor(
+		private svgIcons: SvgIconService,
+		private readonly themeService: ThemeService
+	) {
+		this.svgIcons.init();
+	}
 
-  ngOnInit() {
-  }
+	toggleTheme(isDarkMode) {
+		this.toggleDarkMode = isDarkMode;
+		this.themeService.OnThemeSwitch.next(isDarkMode);
+	}
 
+	ngOnInit() {}
 }

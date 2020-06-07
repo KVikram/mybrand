@@ -15,7 +15,9 @@ import { AboutComponent, ShareMenuSheet } from "./home/about/about.component";
 import { TimelineComponent } from "./home/timeline/timeline.component";
 import { STEPPER_GLOBAL_OPTIONS } from "@angular/cdk/stepper";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { TechstackComponent } from './home/techstack/techstack.component';
+import { TechstackComponent } from "./home/techstack/techstack.component";
+import { OverlayContainer } from "@angular/cdk/overlay";
+import { ThemeService } from "./services/theme.service";
 
 @NgModule({
 	declarations: [
@@ -45,6 +47,8 @@ import { TechstackComponent } from './home/techstack/techstack.component';
 			provide: STEPPER_GLOBAL_OPTIONS,
 			useValue: { displayDefaultIndicatorType: false },
 		},
+		OverlayContainer,
+		ThemeService,
 	],
 	bootstrap: [AppComponent],
 })
