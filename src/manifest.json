@@ -1,7 +1,7 @@
 {
 	"name": "Vikram Kadiam",
 	"short_name": "VK",
-	"theme_color": "#16e07e",
+	"theme_color": "#212121",
 	"background_color": "#0d0d0d",
 	"display": "standalone",
 	"Scope": "/home",
