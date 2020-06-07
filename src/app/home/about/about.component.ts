@@ -1,19 +1,21 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, OnDestroy } from "@angular/core";
 import { MatBottomSheet, MatBottomSheetRef } from "@angular/material";
 import { MatSnackBar } from "@angular/material";
 import { ThemeService } from "src/app/services/theme.service";
+import { Subscription } from "rxjs";
 
 @Component({
 	selector: "app-about",
 	templateUrl: "./about.component.html",
 	styleUrls: ["./about.component.css"],
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent implements OnInit, OnDestroy {
 	name: String;
 	title: String;
 	summary: String;
 	soBadgeURL: String;
 	soThemeURL: String;
+	themingSubscription: Subscription;
 
 	constructor(
 		private bottomSheet: MatBottomSheet,
@@ -39,6 +41,10 @@ export class AboutComponent implements OnInit {
 				? this.soBadgeURL + "?theme=dark"
 				: this.soBadgeURL + "?theme=clean";
 		});
+	}
+
+	ngOnDestroy() {
+		this.themingSubscription.unsubscribe();
 	}
 }
 
