@@ -1,6 +1,5 @@
 {
-	"skills": [
-		{
+	"skills": [{
 			"name": "Angular Js",
 			"level": "Expert",
 			"rating": 5,
@@ -89,7 +88,7 @@
 			"icon": "assets/icons/tech-icons/spring-boot-logo.png"
 		},
 		{
-			"name": "Microservices",
+			"name": "Micro services",
 			"level": "Intermediate",
 			"rating": 3,
 			"yearsOfExperience": 2,
