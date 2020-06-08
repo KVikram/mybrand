@@ -8,6 +8,7 @@ body {
 	/* background: rgb(41, 39, 39);
 	color: #fff; */
 }
+
 html,
 body {
 	margin: 0;
@@ -21,7 +22,7 @@ mat-icon {
 
 /*
 Crazy root hack to keep gap/padding between
-mat-step-icon & mat-step-label in the timeline.component.hmtl
+mat-step-icon & mat-step-label in the timeline.component.html
 NOTE: It won't work unless it's in root css..!  
 */
 .mat-step-header .mat-step-label {

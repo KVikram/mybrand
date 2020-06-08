@@ -2,26 +2,25 @@
 	<mat-card-header>
 		<mat-card-title>Tech Skills</mat-card-title>
 		<mat-icon>engineering</mat-icon>
-		<mat-icon
-			matTooltip="Ratings are indicative values of how well I can apply those technologies, subjective to requirements & business cases"
-			matTooltipPosition="after"
-			class="small-info"
-		>
+		<mat-icon matTooltip="Ratings are indicative values of how well I can apply those technologies, subjective to requirements & business cases"
+				  matTooltipPosition="after"
+				  class="small-info">
 			info
 		</mat-icon>
 	</mat-card-header>
 </mat-card>
 
-<div fxLayout="row wrap" fxLayoutAlign="space-evenly">
-	<mat-card
-		fxFlex.lg="calc(20% - 12px)"
-		fxFlex.lt-lg="calc(20% - 12px)"
-		fxFlex.sm="calc(30% - 12px)"
-		fxFlex.xs="calc(50% - 12px)"
-		*ngFor="let tech of techSkills"
-	>
+<div fxLayout="row wrap"
+	 fxLayoutAlign="space-evenly">
+	<mat-card fxFlex.lg="calc(20% - 12px)"
+			  fxFlex.lt-lg="calc(20% - 12px)"
+			  fxFlex.sm="calc(30% - 12px)"
+			  fxFlex.xs="calc(50% - 12px)"
+			  *ngFor="let tech of techSkills">
 		<mat-card-header>
-			<img mat-card-avatar src="{{ tech.icon }}" alt="tech icon" />
+			<img mat-card-avatar
+				 src="{{ tech.icon }}"
+				 alt="tech icon" />
 			<mat-card-title>
 				{{ tech.name }}
 			</mat-card-title>
@@ -47,15 +46,13 @@
 			</div>
 
 			<div *ngIf="tech.rating > 0 && tech.rating < 5 && tech.rating % 1 != 0">
-				<span
-					*ngFor="let i of [].constructor(((tech.rating * 10) / 5 - 1) / 2)"
-				>
+				<span *ngFor="let i of [].constructor(((tech.rating * 10) / 5 - 1) / 2)">
 					<mat-icon>star</mat-icon>
 				</span>
-				<span><mat-icon>star_half</mat-icon></span>
-				<span
-					*ngFor="let i of [].constructor(4 - ((tech.rating * 10) / 5 - 1) / 2)"
-				>
+				<span>
+					<mat-icon>star_half</mat-icon>
+				</span>
+				<span *ngFor="let i of [].constructor(4 - ((tech.rating * 10) / 5 - 1) / 2)">
 					<mat-icon>star_outline</mat-icon>
 				</span>
 			</div>
