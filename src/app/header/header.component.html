@@ -1,57 +1,51 @@
 <mat-toolbar color="primary">
 	<mat-toolbar-row>
-		<span *ngIf="!toggleDarkMode">
-			<mat-icon class="example-icon" (click)="toggleTheme(true)"
-				>bedtime
-			</mat-icon>
-		</span>
+		<mat-icon *ngIf="!toggleDarkMode"
+				  class="example-icon"
+				  (click)="toggleTheme(true)">bedtime
+		</mat-icon>
 		<!-- Dark Mode Icon-->
-		<span *ngIf="toggleDarkMode">
-			<mat-icon class="example-icon" (click)="toggleTheme(false)"
-				>wb_sunny
-			</mat-icon>
-		</span>
+		<mat-icon *ngIf="toggleDarkMode"
+				  class="example-icon"
+				  (click)="toggleTheme(false)">wb_sunny
+		</mat-icon>
 		<!-- Light Mode Icon -->
 		<span class="example-spacer"></span>
 
-		<a
-			mat-icon-button
-			aria-label="Twitter Icon"
-			href="https://twitter.com/vikramKadiam"
-			target="_blank"
-			rel="noreferrer"
-		>
-			<mat-icon class="example-icon" svgIcon="twitter"></mat-icon>
+		<a mat-icon-button
+		   aria-label="Twitter Icon"
+		   href="https://twitter.com/vikramKadiam"
+		   target="_blank"
+		   rel="noreferrer">
+			<mat-icon class="example-icon"
+					  svgIcon="twitter"></mat-icon>
 		</a>
 
-		<a
-			mat-icon-button
-			aria-label="LinkedIn Icon"
-			href="https://www.linkedin.com/in/vikram-kadiam/"
-			target="_blank"
-			rel="noreferrer"
-		>
-			<mat-icon class="example-icon" svgIcon="linkedin"></mat-icon>
+		<a mat-icon-button
+		   aria-label="LinkedIn Icon"
+		   href="https://www.linkedin.com/in/vikram-kadiam/"
+		   target="_blank"
+		   rel="noreferrer">
+			<mat-icon class="example-icon"
+					  svgIcon="linkedin"></mat-icon>
 		</a>
 
-		<a
-			mat-icon-button
-			aria-label="Github Icon"
-			href="https://github.com/KVikram"
-			target="_blank"
-			rel="noreferrer"
-		>
-			<mat-icon class="example-icon" svgIcon="github"></mat-icon>
+		<a mat-icon-button
+		   aria-label="Github Icon"
+		   href="https://github.com/KVikram"
+		   target="_blank"
+		   rel="noreferrer">
+			<mat-icon class="example-icon"
+					  svgIcon="github"></mat-icon>
 		</a>
 
-		<a
-			mat-icon-button
-			aria-label="Stackoverflow Icon"
-			href="https://stackoverflow.com/users/4316707/ngcoder?tab=profile"
-			target="_blank"
-			rel="noreferrer"
-		>
-			<mat-icon class="example-icon" svgIcon="stackoverflow"></mat-icon>
+		<a mat-icon-button
+		   aria-label="Stackoverflow Icon"
+		   href="https://stackoverflow.com/users/4316707/ngcoder?tab=profile"
+		   target="_blank"
+		   rel="noreferrer">
+			<mat-icon class="example-icon"
+					  svgIcon="stackoverflow"></mat-icon>
 		</a>
 	</mat-toolbar-row>
 </mat-toolbar>
