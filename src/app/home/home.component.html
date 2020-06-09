@@ -1,31 +1,8 @@
-<!-- <mat-grid-list cols="4" gutterSize="0px" class="home">
-	<mat-grid-tile [colspan]="4" [rowspan]="1" class="add-bg-img">
-		<app-about></app-about>
-	</mat-grid-tile>
-	<mat-divider></mat-divider>
-
-	<mat-grid-tile [colspan]="4" [rowspan]="1">
-		<app-techstack></app-techstack>
-	</mat-grid-tile>
-	<mat-divider></mat-divider>
-
-	<mat-grid-tile [colspan]="4" [rowspan]="2">
-		<app-timeline></app-timeline>
-	</mat-grid-tile>
-	<mat-divider></mat-divider>
-
-	<mat-grid-tile [colspan]="4" [rowspan]="1" [style.background]="'#121212'">
-		four
-	</mat-grid-tile>
-	<mat-divider></mat-divider>
-</mat-grid-list> -->
-
 <div class="container">
-	<div
-		class="flex-container"
-		fxLayout="column"
-		fxLayoutAlign="space-evenly stretch"
-	>
+	<div class="flex-container"
+		 fxLayout="column"
+		 fxLayoutAlign="space-evenly stretch">
+
 		<app-about></app-about>
 
 		<mat-divider></mat-divider>
@@ -38,6 +15,7 @@
 
 		<mat-divider></mat-divider>
 
-		<mat-card>4. Four</mat-card>
+		<app-blogposts></app-blogposts>
+
 	</div>
 </div>

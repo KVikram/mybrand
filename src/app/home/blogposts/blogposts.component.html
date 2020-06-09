@@ -1,0 +1,57 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Articles</mat-card-title>
+    <mat-icon>article</mat-icon>
+  </mat-card-header>
+</mat-card>
+<mat-divider></mat-divider>
+
+<div class="container"
+     fxLayout="row wrap"
+     fxLayout.xs="column"
+     fxLayoutGap="12px"
+     fxLayoutAlign="space-evenly">
+
+  <mat-card *ngFor="let blog of wordPressBlogs?.posts"
+            fxFlex.lg="calc(25% - 12px)"
+            fxFlex.lt-lg="calc(33% - 12px)"
+            fxFlex.sm="calc(50% - 12px)"
+            fxFlex.xs="calc(100% - 12px)">
+    <mat-card-header>
+      <!-- <div mat-card-avatar class="example-header-image"></div> -->
+      <img mat-card-avatar
+           class="blog-avatar-image"
+           src="{{blog.author.avatar_URL}}">
+      <mat-card-title>{{blog.title}}</mat-card-title>
+      <mat-card-subtitle> {{blog.author.name}} </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p [innerHTML]="blog.excerpt">
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-icon-button>
+
+        <mat-icon matBadge="{{blog.like_count}}"
+                  matBadgeOverlap="false"
+                  matBadgeColor="primary"
+                  color="accent">thumb_up</mat-icon>
+      </button>
+      <!-- <button mat-icon-button>
+      {{blog.like_count}}
+      <mat-icon color="accent">thumb_up</mat-icon>
+    </button> -->
+      <div fxFlex></div>
+      <a mat-raised-button
+         aria-label="Blog link"
+         href="{{blog.URL}}"
+         target="_blank"
+         rel="noreferrer"
+         color="accent">
+        <!-- <mat-icon color="accent">link</mat-icon> -->
+        Read more
+      </a>
+    </mat-card-actions>
+  </mat-card>
+</div>

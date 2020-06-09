@@ -18,6 +18,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { TechstackComponent } from "./home/techstack/techstack.component";
 import { OverlayContainer } from "@angular/cdk/overlay";
 import { ThemeService } from "./services/theme.service";
+import { BlogpostsComponent } from './home/blogposts/blogposts.component';
 
 @NgModule({
 	declarations: [
@@ -29,6 +30,7 @@ import { ThemeService } from "./services/theme.service";
 		ShareMenuSheet,
 		TimelineComponent,
 		TechstackComponent,
+		BlogpostsComponent,
 	],
 	imports: [
 		BrowserModule,
