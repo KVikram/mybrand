@@ -10,12 +10,13 @@ export class TechstackComponent implements OnInit {
 	techSkills: [];
 
 	constructor(private httpClient: HttpClient) {
+
+	}
+
+	ngOnInit() {
 		this.httpClient
-			.get("assets/data/tech-stack.json")
-			.subscribe((data: any) => {
+			.get("assets/data/tech-stack.json").subscribe((data: any) => {
 				this.techSkills = data.skills;
 			});
 	}
-
-	ngOnInit() {}
 }
