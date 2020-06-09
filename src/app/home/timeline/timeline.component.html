@@ -19,37 +19,43 @@
 		<mat-icon>work</mat-icon>
 	</ng-template> -->
 
-	<ng-template matStepperIcon="number" let-index="index">
+	<ng-template matStepperIcon="number"
+				 let-index="index">
 		<div>
 			<mat-chip-list>
-				<mat-chip color="primary" selected>
+				<mat-chip color="primary"
+						  selected>
 					<b> {{ workTimeline.work[index].startDate | date: "yyy" }} </b>
 				</mat-chip>
 			</mat-chip-list>
 		</div>
 	</ng-template>
 
-	<ng-template matStepperIcon="edit" let-index="index">
+	<ng-template matStepperIcon="edit"
+				 let-index="index">
 		<div>
 			<mat-chip-list>
-				<mat-chip color="primary" selected>
+				<mat-chip color="primary"
+						  selected>
 					<b> {{ workTimeline.work[index].startDate | date: "yyy" }} </b>
 				</mat-chip>
 			</mat-chip-list>
 		</div>
 	</ng-template>
 
-	<ng-template matStepperIcon="done" let-index="index">
+	<ng-template matStepperIcon="done"
+				 let-index="index">
 		<div>
 			<mat-chip-list>
-				<mat-chip color="primary" selected>
+				<mat-chip color="primary"
+						  selected>
 					<b> {{ workTimeline.work[index].startDate | date: "yyy" }} </b>
 				</mat-chip>
 			</mat-chip-list>
 		</div>
 	</ng-template>
 
-	<mat-step *ngFor="let workItem of workTimeline.work; let i = index">
+	<mat-step *ngFor="let workItem of workTimeline?.work; let i = index">
 		<ng-template matStepLabel>
 			<!-- <b> {{workItem.startDate | date:'yyy'}} </b> -->
 			<mat-card>
