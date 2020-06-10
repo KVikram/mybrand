@@ -25,7 +25,6 @@ export class AppComponent implements OnInit, OnDestroy {
 			filter((e) => e instanceof NavigationEnd)
 		);
 		navEndEvent$.subscribe((e: NavigationEnd) => {
-			console.log("gtag invoked");
 			gtag("config", "UA-125406347-2", { page_path: e.urlAfterRedirects });
 		});
 	}

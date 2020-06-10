@@ -134,4 +134,4 @@ import {
     ScrollingModule,
   ],
 })
-export class AppMaterialModule {}
+export class AppMaterialModule { }

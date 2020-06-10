@@ -5,15 +5,14 @@
 html,
 body {
 	height: 100%;
-	/* background: rgb(41, 39, 39);
-	color: #fff; */
+	margin: 0;
 }
 
-html,
+/* html,
 body {
 	margin: 0;
 	font-family: "Source Code Pro", monospace;
-}
+} */
 
 /* To make curosr pointer for mat icons */
 mat-icon {
