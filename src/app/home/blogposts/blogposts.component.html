@@ -21,7 +21,8 @@
       <!-- <div mat-card-avatar class="example-header-image"></div> -->
       <img mat-card-avatar
            class="blog-avatar-image"
-           src="{{blog.author.avatar_URL}}">
+           src="{{blog.author.avatar_URL}}"
+           alt="Blog avatar">
       <mat-card-title>{{blog.title}}</mat-card-title>
       <mat-card-subtitle> {{blog.author.name}} </mat-card-subtitle>
     </mat-card-header>
@@ -31,7 +32,8 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-icon-button>
+      <button mat-icon-button
+              aria-label="Like">
 
         <mat-icon matBadge="{{blog.like_count}}"
                   matBadgeOverlap="false"
