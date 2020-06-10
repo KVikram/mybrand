@@ -93,7 +93,7 @@
 			"rating": 3,
 			"yearsOfExperience": 2,
 			"keywords": [],
-			"icon": "assets/icons/tech-icons/microservices.png"
+			"icon": "assets/icons/tech-icons/microservices.jpg"
 		},
 		{
 			"name": "Git",
@@ -125,7 +125,7 @@
 			"rating": 4,
 			"yearsOfExperience": 4,
 			"keywords": [],
-			"icon": "assets/icons/tech-icons/PWA.jpeg"
+			"icon": "assets/icons/tech-icons/PWA.jpg"
 		},
 		{
 			"name": "Cloud platform",
