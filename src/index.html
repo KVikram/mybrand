@@ -80,10 +80,11 @@ _/ / /_(_/(_/ / /_/ |_/_)_  (__(_)  / / / /_/ (_/_  (_/_/ (_//_(/_'
 	<link rel="icon"
 		  type="image/x-icon"
 		  href="favicon.ico" />
-	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&amp;display=swap"
-		  rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap"
+		  rel="stylesheet preload"
+		  as="style" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-		  rel="stylesheet" />
+		  rel="stylesheet preload" />
 	<link rel="manifest"
 		  href="manifest.json" />
 	<meta name="theme-color"
@@ -91,7 +92,9 @@ _/ / /_(_/(_/ / /_/ |_/_)_  (__(_)  / / / /_/ (_/_  (_/_/ (_//_(/_'
 </head>
 
 <body>
-	<app-root></app-root>
+	<a class="skip-link"
+	   href="#maincontent">Skip to Start</a>
+	<app-root id="maincontent"></app-root>
 	<noscript>
 		Please enable JavaScript to continue using this application.
 	</noscript>

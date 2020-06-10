@@ -28,3 +28,18 @@ NOTE: It won't work unless it's in root css..!
 .mat-step-header .mat-step-label {
 	padding-left: 12px;
 }
+
+/* Skip link css which we don't wanna showw unless user tries */
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: #000000;
+	color: white;
+	padding: 8px;
+	z-index: 100;
+}
+
+.skip-link:focus {
+	top: 0;
+}
