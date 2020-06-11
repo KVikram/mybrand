@@ -42,3 +42,8 @@ NOTE: It won't work unless it's in root css..!
 .skip-link:focus {
 	top: 0;
 }
+
+/* Creates empty space between two items */
+.empty-spacer {
+	flex: 1 1 auto;
+}
