@@ -1,16 +1,20 @@
 <mat-toolbar color="primary">
 	<mat-toolbar-row>
 		<mat-icon *ngIf="!toggleDarkMode"
+				  matTooltip="Toggle for dark mode"
+				  matTooltipPosition="after"
 				  class="example-icon"
 				  (click)="toggleTheme(true)">bedtime
 		</mat-icon>
 		<!-- Dark Mode Icon-->
 		<mat-icon *ngIf="toggleDarkMode"
+				  matTooltip="Toggle for light mode"
+				  matTooltipPosition="after"
 				  class="example-icon"
 				  (click)="toggleTheme(false)">wb_sunny
 		</mat-icon>
 		<!-- Light Mode Icon -->
-		<span class="example-spacer"></span>
+		<span class="empty-spacer"></span>
 
 		<a mat-icon-button
 		   aria-label="Twitter Icon"
@@ -18,6 +22,8 @@
 		   target="_blank"
 		   rel="noreferrer">
 			<mat-icon class="example-icon"
+					  matTooltip="Tweet @vikramKadiam"
+					  matTooltipPosition="below"
 					  svgIcon="twitter"></mat-icon>
 		</a>
 
@@ -27,6 +33,8 @@
 		   target="_blank"
 		   rel="noreferrer">
 			<mat-icon class="example-icon"
+					  matTooltip="Connect with me"
+					  matTooltipPosition="below"
 					  svgIcon="linkedin"></mat-icon>
 		</a>
 
@@ -36,6 +44,8 @@
 		   target="_blank"
 		   rel="noreferrer">
 			<mat-icon class="example-icon"
+					  matTooltip="Check out my projects"
+					  matTooltipPosition="below"
 					  svgIcon="github"></mat-icon>
 		</a>
 
@@ -45,6 +55,8 @@
 		   target="_blank"
 		   rel="noreferrer">
 			<mat-icon class="example-icon"
+					  matTooltip="SO"
+					  matTooltipPosition="below"
 					  svgIcon="stackoverflow"></mat-icon>
 		</a>
 	</mat-toolbar-row>
