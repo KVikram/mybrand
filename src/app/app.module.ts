@@ -19,6 +19,7 @@ import { TechstackComponent } from "./home/techstack/techstack.component";
 import { OverlayContainer } from "@angular/cdk/overlay";
 import { ThemeService } from "./services/theme.service";
 import { BlogpostsComponent } from './home/blogposts/blogposts.component';
+import { ScrollUpComponent } from './scroll-up/scroll-up.component';
 
 @NgModule({
 	declarations: [
@@ -31,6 +32,7 @@ import { BlogpostsComponent } from './home/blogposts/blogposts.component';
 		TimelineComponent,
 		TechstackComponent,
 		BlogpostsComponent,
+		ScrollUpComponent,
 	],
 	imports: [
 		BrowserModule,

@@ -1,0 +1,14 @@
+<!--Scroll to top-->
+<div class="scroll-to-top"
+     [ngClass]="{'show-scrollTop': windowScrolled}">
+  <!-- <button (click)="scrollToTop()">
+    <i class="fa fa-chevron-up"></i>
+  </button> -->
+
+  <button mat-icon-button
+          aria-label="Scroll up"
+          (click)="scrollToTop()">
+
+    <mat-icon color="accent">arrow_circle_up</mat-icon>
+  </button>
+</div>
