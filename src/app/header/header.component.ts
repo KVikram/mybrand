@@ -14,13 +14,18 @@ export class HeaderComponent implements OnInit {
 		private svgIcons: SvgIconService,
 		private readonly themeService: ThemeService
 	) {
+		//initialize SVG icons in the matIconRegistry for use.
 		this.svgIcons.init();
 	}
 
+	/**
+	 * Toggle the theme from Light <--> Dark mode
+	 *  and inform ThemeService about the switch.
+	 */
 	toggleTheme(isDarkMode) {
 		this.toggleDarkMode = isDarkMode;
 		this.themeService.OnThemeSwitch.next(isDarkMode);
 	}
 
-	ngOnInit() {}
+	ngOnInit() { }
 }
