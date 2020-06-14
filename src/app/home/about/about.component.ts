@@ -36,7 +36,7 @@ export class AboutComponent implements OnInit, OnDestroy {
 	}
 
 	ngOnInit() {
-		this.themeService.OnThemeSwitch.subscribe((value) => {
+		this.themingSubscription = this.themeService.OnThemeSwitch.subscribe((value) => {
 			this.soThemeURL = value
 				? this.soBadgeURL + "?theme=dark"
 				: this.soBadgeURL + "?theme=clean";
@@ -56,7 +56,7 @@ export class ShareMenuSheet {
 	constructor(
 		private bottomSheetRef: MatBottomSheetRef<ShareMenuSheet>,
 		private snackBar: MatSnackBar
-	) {}
+	) { }
 
 	copyLink(link: string): void {
 		this.bottomSheetRef.dismiss();
