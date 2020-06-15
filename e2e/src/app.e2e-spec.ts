@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should match subtitle', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to mybrand!');
+    expect(page.getTitleText()).toEqual('Technical Architect');
   });
 
   afterEach(async () => {
