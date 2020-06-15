@@ -6,10 +6,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/87f74a74-d998-41dd-a261-83047fc8d700/deploy-status)](https://app.netlify.com/sites/vikramkadiam/deploys)
 
+## Version
+
+[![Version](https://badge.fury.io/gh/tterb%2FHyde.svg)](https://badge.fury.io/gh/tterb%2FHyde)
+[![GitHub Release](https://img.shields.io/github/release/KVikram/PlayMusic.svg?style=flat)]() 
 
 ## Commits
-[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat)]()
-
+[![GitHub last commit](https://img.shields.io/github/last-commit/KVikram/mybrand?style=flat)]()
 
 ## Development server
 
@@ -31,19 +34,19 @@ We use [generate-changelog](https://github.com/lob/generate-changelog) for makin
 
 Where type is one of the following:
 
-breaking
-build
-ci
-chore
-docs
-feat
-fix
-other
-perf
-refactor
-revert
-style
-test
+  * `breaking`
+  * `build`
+  * `ci`
+  * `chore`
+  * `docs`
+  * `feat`
+  * `fix`
+  * `other`
+  * `perf`
+  * `refactor`
+  * `revert`
+  * `style`
+  * `test`
 
 ## Running unit tests
 
