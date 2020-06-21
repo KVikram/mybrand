@@ -23,7 +23,8 @@
 							"src/assets",
 							"src/manifest.json",
 							"src/_redirects",
-							"src/robots.txt"
+							"src/robots.txt",
+							"src/sitemap.xml"
 						],
 						"styles": ["src/styles.css", "src/theme.scss"],
 						"scripts": [],
