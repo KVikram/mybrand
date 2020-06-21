@@ -1,3 +1,40 @@
+#### 1.1.0 (2020-06-21)
+
+##### Documentation Changes
+
+* **readme:**
+  *  Update readme (80d6c7a9)
+  * Updated readme and introduced changelog (816b64f1)
+
+##### New Features
+
+* **theme:** Introduced transition while switching theme (2f57cdbd)
+
+##### Bug Fixes
+
+* **lighthouse:** added aria labels and fixed lighthouse issues (e04047f9)
+* **SEO/lighthouse:** added maskable prop;Gsite verf;sitemap (db0f4cee)
+
+##### Code Style Changes
+
+* **theme:** styles for theme transition (111e1f11)
+
+##### Tests
+
+* **e2e:**  Updated e2e tests (f5bf77ca)
+
+#### v1.0.1 (2020-06-15)
+
+##### Documentation Changes
+
+* **readme:**
+  *  Update readme (80d6c7a9)
+  * Updated readme and introduced changelog (816b64f1)
+
+##### Tests
+
+* **e2e:**  Updated e2e tests (f5bf77ca)
+
 #### v1.0.0 (2020-06-15)
 
 ##### Beta release Changes
