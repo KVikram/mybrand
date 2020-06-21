@@ -20,6 +20,8 @@ import { OverlayContainer } from "@angular/cdk/overlay";
 import { ThemeService } from "./services/theme.service";
 import { BlogpostsComponent } from './home/blogposts/blogposts.component';
 import { ScrollUpComponent } from './scroll-up/scroll-up.component';
+import { OverlayComponent } from './overlay/overlay.component';
+import { OverlayService } from './services/overlay.service';
 
 @NgModule({
 	declarations: [
@@ -33,6 +35,7 @@ import { ScrollUpComponent } from './scroll-up/scroll-up.component';
 		TechstackComponent,
 		BlogpostsComponent,
 		ScrollUpComponent,
+		OverlayComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -45,7 +48,7 @@ import { ScrollUpComponent } from './scroll-up/scroll-up.component';
 		}),
 		FlexLayoutModule,
 	],
-	entryComponents: [ShareMenuSheet],
+	entryComponents: [ShareMenuSheet, OverlayComponent],
 	providers: [
 		{
 			provide: STEPPER_GLOBAL_OPTIONS,
@@ -53,7 +56,8 @@ import { ScrollUpComponent } from './scroll-up/scroll-up.component';
 		},
 		OverlayContainer,
 		ThemeService,
+		OverlayService,
 	],
 	bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
