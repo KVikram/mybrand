@@ -47,3 +47,35 @@ NOTE: It won't work unless it's in root css..!
 .empty-spacer {
 	flex: 1 1 auto;
 }
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing.dark-backdrop {
+	background: #000;
+	opacity: 0.85 !important;
+	animation: dark 2s infinite;
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing.white-backdrop {
+	background: rgb(242, 242, 247);
+	opacity: 0.85 !important;
+	animation: light 2s infinite;
+}
+
+@keyframes light {
+	from {
+		background-color: #000;
+	}
+
+	to {
+		background-color: rgb(242, 242, 247);
+	}
+}
+
+@keyframes dark {
+	from {
+		background-color: rgb(242, 242, 247);
+	}
+
+	to {
+		background-color: #000;
+	}
+}
