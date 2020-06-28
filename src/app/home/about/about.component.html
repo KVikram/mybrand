@@ -1,11 +1,15 @@
 <mat-card>
 	<mat-card-header>
+		<!-- <div mat-card-avatar
+			 [ngStyle]="{'background-image': 'url(' + aboutInfo.picture + ')', 'background-size': 'cover'  }">
+			</div> -->
 		<div mat-card-avatar
-			 class="profile-header-image"></div>
+			 class="profile-header-image">
+		</div>
 		<mat-card-title>
 			<span matBadge="VK"
 				  matBadgeOverlap="false"
-				  matBadgeColor="primary">{{name}}
+				  matBadgeColor="primary">{{aboutInfo?.name}}
 			</span>
 		</mat-card-title>
 		<span>
@@ -16,11 +20,11 @@
 		</span>
 		<span class="empty-spacer"></span>
 
-		<mat-card-subtitle>{{ title }}</mat-card-subtitle>
+		<mat-card-subtitle>{{ aboutInfo?.label }}</mat-card-subtitle>
 	</mat-card-header>
 	<!--  <img mat-card-image src="assets/images/6FA036AA-EC2C-4FAF-A37D-8E2C3DAB5CE8.jpeg" alt="Technologies"> -->
 	<mat-card-content>
-		<p>{{ summary }}</p>
+		<p>{{ aboutInfo?.summary }}</p>
 		<a href="https://stackoverflow.com/users/4316707/ngcoder"
 		   rel="noreferrer"><img [src]="soThemeURL"
 				 alt="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers"

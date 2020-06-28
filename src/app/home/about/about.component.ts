@@ -3,6 +3,7 @@ import { MatBottomSheet, MatBottomSheetRef } from "@angular/material";
 import { MatSnackBar } from "@angular/material";
 import { ThemeService } from "src/app/services/theme.service";
 import { Subscription } from "rxjs";
+import { ShareDataService } from 'src/app/services/share-data.service';
 
 @Component({
 	selector: "app-about",
@@ -10,25 +11,20 @@ import { Subscription } from "rxjs";
 	styleUrls: ["./about.component.css"],
 })
 export class AboutComponent implements OnInit, OnDestroy {
-	name: String;
-	title: String;
-	summary: String;
+	aboutInfo: any;
 	soBadgeURL: String;
 	soThemeURL: String;
+	profileInfo: {};
 	themingSubscription: Subscription;
+
 
 	constructor(
 		private bottomSheet: MatBottomSheet,
-		private readonly themeService: ThemeService
+		private readonly themeService: ThemeService,
+		private dataService: ShareDataService
 	) {
-		this.name = "Vikram Kadiam";
-		this.title = "Technical Architect";
-		this.summary = `Currently employed in TCS (Tata Consultancy Services Ltd) as Assistant Consultant in the
-     role of Technical Architect, working for a major automotive client in transforming their IT business by 
-     innovating and understanding their vision to roadmap for successful delivery of services.`;
 		this.soBadgeURL = "https://stackoverflow.com/users/flair/4316707.png";
-		this.soThemeURL =
-			"https://stackoverflow.com/users/flair/4316707.png?theme=clean";
+		this.soThemeURL = "https://stackoverflow.com/users/flair/4316707.png?theme=clean";
 	}
 
 	openShareSheet(): void {
@@ -36,6 +32,28 @@ export class AboutComponent implements OnInit, OnDestroy {
 	}
 
 	ngOnInit() {
+		//load about section by fetching profile details
+		this.loadProfileInfo();
+		//set SO badge theme
+		this.setSOBadgeTheme();
+	}
+
+	/**
+	 * Load profile info by calling shared service getProfileInfo()
+	 */
+	private loadProfileInfo() {
+		this.dataService.getProfileInfo().subscribe((data: any) => {
+			this.profileInfo = data;
+			this.aboutInfo = data.basics;
+			//send the profile data to other components
+			this.dataService.sendProfileInfo(this.profileInfo);
+		});
+	}
+
+	/**
+	 * Set SO badge theme based on user selected app theme
+	 */
+	private setSOBadgeTheme() {
 		this.themingSubscription = this.themeService.OnThemeSwitch.subscribe((value) => {
 			this.soThemeURL = value
 				? this.soBadgeURL + "?theme=dark"

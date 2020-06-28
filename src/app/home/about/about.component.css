@@ -1,5 +1,6 @@
 .profile-header-image {
-  background-image: url('src/assets/images/65C29B51-65C3-401C-A656-828D9C7ABB1F_1_105_c.jpeg');
+  /* background-image: url('src/assets/images/65C29B51-65C3-401C-A656-828D9C7ABB1F_1_105_c.jpeg'); */
+  background-image: url('https://avatars0.githubusercontent.com/u/8777907?s=60&v=4');
   background-size: cover;
 }
 

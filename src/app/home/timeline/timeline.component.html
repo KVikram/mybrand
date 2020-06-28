@@ -26,7 +26,7 @@
 				<mat-chip color="primary"
 						  aria-label="year"
 						  selected>
-					<b> {{ workTimeline.work[index].startDate | date: "yyy" }} </b>
+					<b> {{ workTimeline[index].startDate | date: "yyy" }} </b>
 				</mat-chip>
 			</mat-chip-list>
 		</div>
@@ -39,7 +39,7 @@
 				<mat-chip color="primary"
 						  aria-label="year"
 						  selected>
-					<b> {{ workTimeline.work[index].startDate | date: "yyy" }} </b>
+					<b> {{ workTimeline[index].startDate | date: "yyy" }} </b>
 				</mat-chip>
 			</mat-chip-list>
 		</div>
@@ -52,13 +52,13 @@
 				<mat-chip color="primary"
 						  aria-label="year"
 						  selected>
-					<b> {{ workTimeline.work[index].startDate | date: "yyy" }} </b>
+					<b> {{ workTimeline[index].startDate | date: "yyy" }} </b>
 				</mat-chip>
 			</mat-chip-list>
 		</div>
 	</ng-template>
 
-	<mat-step *ngFor="let workItem of workTimeline?.work; let i = index">
+	<mat-step *ngFor="let workItem of workTimeline; let i = index">
 		<ng-template matStepLabel>
 			<!-- <b> {{workItem.startDate | date:'yyy'}} </b> -->
 			<mat-card>
