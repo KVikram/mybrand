@@ -1,22 +1,126 @@
-<div class="container">
+<div class="container"
+	 id="home">
 	<div class="flex-container"
 		 fxLayout="column"
 		 fxLayoutAlign="space-evenly stretch">
+		<div class="full-screen">
+			<!-- <button mat-icon-button
+					aria-label="menu"
+					[matMenuTriggerFor]="menu"
+					#menuTrigger="matMenuTrigger">
+				<mat-icon class="example-icon">more_vert</mat-icon>
+			</button> -->
 
-		<app-about id="about"></app-about>
+			<mat-toolbar color="primary">
+				<mat-toolbar-row>
+					<div fxLayout="row wrap"
+						 fxLayoutAlign="center center"
+						 fxFlex="1 1 auto">
+						<button mat-button
+								class="dark-icon"
+								aria-label="About button"
+								(click)="scrollToSection('about')">
+							<mat-icon class="icon-space">account_circle</mat-icon>
+							<span fxShow.xs="false">About</span>
+						</button>
 
+						<button mat-button
+								class="dark-icon"
+								aria-label="Skills button"
+								(click)="scrollToSection('skills')">
+							<mat-icon class="icon-space">engineering</mat-icon>
+							<span fxShow.xs="false">Skills</span>
+						</button>
+
+						<button mat-button
+								class="dark-icon"
+								aria-label="Work button"
+								(click)="scrollToSection('timeline')">
+							<mat-icon class="icon-space">timeline</mat-icon>
+							<span fxShow.xs="false">Experience</span>
+						</button>
+
+						<button mat-button
+								class="dark-icon"
+								aria-label="Blogs button"
+								(click)="scrollToSection('articles')">
+							<mat-icon class="icon-space">article</mat-icon>
+							<span fxShow.xs="false">Articles</span>
+						</button>
+					</div>
+				</mat-toolbar-row>
+			</mat-toolbar>
+
+			<section class="hero"
+					 [ngClass]="{'light-primary-background':!isDark,'dark-primary-background':isDark}">
+				<div class="hero-inner">
+					<h1>Hey! Welcome, I'm Vikram Kadiam</h1>
+					<p>I'm a Software Architect and also a Full-stack & MEAN-stack developer</p>
+					<span class="empty-spacer"></span>
+					<div class="scroll-down">
+						<button mat-button
+								color="primary"
+								aria-label="Scroll down"
+								(click)="scrollToSection('about')">
+							<mat-icon class="dark-icon">expand_more</mat-icon>
+						</button>
+					</div>
+				</div>
+
+
+			</section>
+		</div>
+
+		<div class="full-screen">
+			<app-about id="about"
+					   #about></app-about>
+		</div>
 		<!-- <mat-divider></mat-divider> -->
-
-		<app-techstack id="skills"></app-techstack>
-
+		<div>
+			<app-techstack id="skills"
+						   #skills></app-techstack>
+		</div>
 		<!-- <mat-divider></mat-divider> -->
-
-		<app-timeline id="timeline"></app-timeline>
-
+		<div>
+			<app-timeline id="timeline"
+						  #timeline></app-timeline>
+		</div>
 		<!-- <mat-divider></mat-divider> -->
-
-		<app-blogposts id="articles"></app-blogposts>
-
+		<div>
+			<app-blogposts id="articles"
+						   #articles></app-blogposts>
+		</div>
 		<scroll-up></scroll-up>
 	</div>
 </div>
+
+<!-- <mat-menu #menu="matMenu"
+		  xPosition="before"
+		  [overlapTrigger]="false">
+	<span>
+
+		<button mat-menu-item
+				(click)="scrollToSection('about')">
+			<mat-icon color="accent">account_circle</mat-icon>
+			<span>About</span>
+		</button>
+
+		<button mat-menu-item
+				(click)="scrollToSection('skills')">
+			<mat-icon color="accent">engineering</mat-icon>
+			<span>Tech Skills</span>
+		</button>
+
+		<button mat-menu-item
+				(click)="scrollToSection('timeline')">
+			<mat-icon color="accent">timeline</mat-icon>
+			<span>Experience</span>
+		</button>
+
+		<button mat-menu-item
+				(click)="scrollToSection('articles')">
+			<mat-icon color="accent">article</mat-icon>
+			<span>Articles</span>
+		</button>
+	</span>
+</mat-menu> -->

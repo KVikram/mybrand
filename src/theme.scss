@@ -3,8 +3,7 @@
 
 // Define a custom typography config that overrides the font-family as well as the
 // `headlines` and `body-1` levels.
-$custom-typography: mat-typography-config(
-	$font-family: '"Source Code Pro", monospace;',
+$custom-typography: mat-typography-config($font-family: '"Source Code Pro", monospace;',
 );
 // Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
 @include mat-base-typography($custom-typography);
@@ -28,11 +27,9 @@ $mybrand-app-accent: mat-palette($mat-grey, 800, A100, A400);
 $mybrand-app-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$mybrand-app-theme: mat-light-theme(
-	$mybrand-app-primary,
+$mybrand-app-theme: mat-light-theme($mybrand-app-primary,
 	$mybrand-app-accent,
-	$mybrand-app-warn
-);
+	$mybrand-app-warn);
 
 .mybrand-light-theme {
 	@include angular-material-theme($mybrand-app-theme);
@@ -46,11 +43,20 @@ $mybrand-app-theme: mat-light-theme(
 $mybrand-app-dark-primary: mat-palette($mat-green);
 $mybrand-app-dark-accent: mat-palette($mat-grey, A200, A100, A400);
 $mybrand-app-dark-warn: mat-palette($mat-deep-orange);
-$mybrand-app-dark-theme: mat-dark-theme(
-	$mybrand-app-dark-primary,
+$mybrand-app-dark-theme: mat-dark-theme($mybrand-app-dark-primary,
 	$mybrand-app-dark-accent,
-	$mybrand-app-dark-warn
-);
+	$mybrand-app-dark-warn);
+
 .mybrand-dark-theme {
 	@include angular-material-theme($mybrand-app-dark-theme);
+}
+
+.light-primary-background {
+	background-color: mat-color($mybrand-app-primary, default);
+	color: black;
+}
+
+.dark-primary-background {
+	background-color: mat-color($mybrand-app-dark-primary, default);
+	color: black;
 }

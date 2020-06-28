@@ -1,0 +1,50 @@
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.icon-space {
+    padding: 0 5px;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+    /* ADD THIS LINE */
+
+
+    /* Background styles */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/assets/images/65C29B51-65C3-401C-A656-828D9C7ABB1F_1_105_c.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 3em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.dark-icon {
+    color: black;
+}
+
+.scroll-down {
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
