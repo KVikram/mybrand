@@ -11,7 +11,8 @@
 				<mat-icon class="example-icon">more_vert</mat-icon>
 			</button> -->
 
-			<mat-toolbar color="primary">
+			<mat-toolbar color="primary"
+						 class="sticky-nav">
 				<mat-toolbar-row>
 					<div fxLayout="row wrap"
 						 fxLayoutAlign="center center"
@@ -57,16 +58,16 @@
 					<h1>Hey! Welcome, I'm Vikram Kadiam</h1>
 					<p>I'm a Software Architect and also a Full-stack & MEAN-stack developer</p>
 					<span class="empty-spacer"></span>
-					<div class="scroll-down">
-						<button mat-button
-								color="primary"
-								aria-label="Scroll down"
-								(click)="scrollToSection('about')">
-							<mat-icon class="dark-icon">expand_more</mat-icon>
-						</button>
-					</div>
-				</div>
 
+				</div>
+				<div class="scroll-down">
+					<button mat-button
+							color="primary"
+							aria-label="Scroll down"
+							(click)="scrollToSection('about')">
+						<mat-icon class="dark-icon">expand_more</mat-icon>
+					</button>
+				</div>
 
 			</section>
 		</div>

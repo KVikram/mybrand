@@ -31,9 +31,6 @@
 }
 
 .hero h1 {
-    /* Text styles */
-    font-size: 3em;
-
     /* Margins */
     margin-top: 0;
     margin-bottom: 0.5em;
@@ -47,4 +44,16 @@
     justify-content: flex-end;
     align-items: flex-end;
     align-content: flex-end;
+    position: absolute;
+    bottom: 0px;
+}
+
+.sticky-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    /* For macOS/iOS Safari */
+    top: 0;
+    /* Sets the sticky toolbar to be on top */
+    z-index: 1000;
+    /* Ensure that your app's content doesn't overlap the toolbar */
 }
