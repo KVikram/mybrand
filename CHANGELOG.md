@@ -1,10 +1,34 @@
-#### 1.1.0 (2020-06-21)
+#### v1.2.0 (2020-07-01)
 
-##### Documentation Changes
+##### New Features
 
-* **readme:**
-  *  Update readme (80d6c7a9)
-  * Updated readme and introduced changelog (816b64f1)
+* **home:** Introduced home banner (cdd57245)
+* **profile:** Introduced gitConnected HTTP GET data to fetch profile info dynamically (fd0551b6)
+* **service:** Introduced new shared data service (f1a18f5f)
+* **theme:** Introduced transition while switching theme (2f57cdbd)
+
+##### Bug Fixes
+
+* **fonts:** Fixed preconnect issue by lighthouse (8512ab0b)
+* **techstack:** added CSS to break long text and decrease font size <400px (f776dcf0)
+* **home:**
+  * Removed 100vh width for scaling issues (07c1f650)
+  * Made nav bar sticky and changed styles (ebfd9b23)
+* **timeline:** added aria-labels to mat-chips (34add1f7)
+* **link:** Changed skip link value (7355079f)
+* **lighthouse:** added aria labels and fixed lighthouse issues (e04047f9)
+* **SEO/lighthouse:** added maskable prop;Gsite verf;sitemap (db0f4cee)
+
+##### Code Style Changes
+
+* **scroll:** Changed icon to Navigation (77bdbb88)
+* **theme:** styles for theme transition (111e1f11)
+
+##### Tests
+
+* **e2e:**  Updated e2e tests (f5bf77ca)
+
+#### v1.1.0 (2020-06-21)
 
 ##### New Features
 
@@ -28,7 +52,7 @@
 ##### Documentation Changes
 
 * **readme:**
-  *  Update readme (80d6c7a9)
+  * Update readme (80d6c7a9)
   * Updated readme and introduced changelog (816b64f1)
 
 ##### Tests
