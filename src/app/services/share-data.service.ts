@@ -59,7 +59,7 @@ export class ShareDataService {
   },
   {
     "name": "Angular",
-    "icon": "assets/icons/tech-icons/icons8-angularjs-100.png"
+    "icon": "assets/icons/tech-icons/angular.png"
   },
   {
     "name": "Java/J2EE",
@@ -71,7 +71,7 @@ export class ShareDataService {
   },
   {
     "name": "Hibernate",
-    "icon": "assets/icons/tech-icons/hibernate_icon_whitebkg_256px.png"
+    "icon": "assets/icons/tech-icons/hibernate.png"
   },
   {
     "name": "Eclipselink",
@@ -99,7 +99,7 @@ export class ShareDataService {
   },
   {
     "name": "Micro services",
-    "icon": "assets/icons/tech-icons/microservices.jpg"
+    "icon": "assets/icons/tech-icons/spring-microservices.png"
   },
   {
     "name": "Git",
@@ -115,7 +115,7 @@ export class ShareDataService {
   },
   {
     "name": "PWA",
-    "icon": "assets/icons/tech-icons/PWA.jpg"
+    "icon": "assets/icons/tech-icons/pwa.png"
   },
   {
     "name": "GCP",
@@ -139,7 +139,7 @@ export class ShareDataService {
   },
   {
     "name": "JPA",
-    "icon": "assets/icons/tech-icons/hibernate_icon_whitebkg_256px.png"
+    "icon": "assets/icons/tech-icons/hibernate.png"
   },
   {
     "name": "Typescript",
@@ -152,6 +152,10 @@ export class ShareDataService {
   {
     "name": "RESTful APIs",
     "icon": "assets/icons/tech-icons/icons8-rest-api-100.png"
+  },
+  {
+    "name": "Angular Material",
+    "icon": "assets/icons/tech-icons/material.png"
   }
   ];
 
