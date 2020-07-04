@@ -24,7 +24,10 @@
 	</mat-card-header>
 	<!--  <img mat-card-image src="assets/images/6FA036AA-EC2C-4FAF-A37D-8E2C3DAB5CE8.jpeg" alt="Technologies"> -->
 	<mat-card-content>
-		<p>{{ aboutInfo?.summary }}</p>
+		<!-- <p>{{ aboutInfo?.summary }}</p> -->
+		<p id="summary"
+		   [innerHTML]="aboutInfo?.summary">
+		</p>
 		<a href="https://stackoverflow.com/users/4316707/ngcoder"
 		   rel="noreferrer"><img [src]="soThemeURL"
 				 alt="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
