@@ -79,3 +79,26 @@ NOTE: It won't work unless it's in root css..!
 		background-color: #000;
 	}
 }
+
+
+
+#footer a:link,
+#summary a:link {
+	color: #000000;
+}
+
+#footer a:visited,
+#summary a:visited {
+	color: #000000;
+}
+
+#footer a:hover,
+#summary a:hover {
+	color: #000000;
+	background-color: #00e676;
+}
+
+#footer a:active,
+#summary a:active {
+	color: #000000;
+}
