@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-flow: column;
     /* Text styles */
     text-align: center;
 
@@ -26,6 +26,18 @@
     /* Margins */
     margin-top: 0;
     margin-bottom: 0.5em;
+}
+
+.hero-inner {
+    flex: 0.5 0 auto;
+}
+
+.motto {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex: 0.2 0 auto;
+    font-size: x-large;
 }
 
 .dark-icon {
