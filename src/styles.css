@@ -55,7 +55,7 @@ NOTE: It won't work unless it's in root css..!
 }
 
 .cdk-overlay-backdrop.cdk-overlay-backdrop-showing.white-backdrop {
-	background: rgb(242, 242, 247);
+	background: rgb(240, 217, 9);
 	opacity: 0.85 !important;
 	animation: light 2s infinite;
 }
@@ -66,13 +66,13 @@ NOTE: It won't work unless it's in root css..!
 	}
 
 	to {
-		background-color: rgb(242, 242, 247);
+		background-color: rgb(240, 217, 9);
 	}
 }
 
 @keyframes dark {
 	from {
-		background-color: rgb(242, 242, 247);
+		background-color: rgb(240, 217, 9);
 	}
 
 	to {
