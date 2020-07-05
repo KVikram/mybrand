@@ -11,3 +11,17 @@
 .share-icon {
   padding: 0 14px;
 }
+
+.space {
+  margin: 10px 0;
+}
+
+.middle {
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+}

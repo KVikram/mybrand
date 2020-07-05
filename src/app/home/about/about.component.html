@@ -1,40 +1,78 @@
-<mat-card>
-	<mat-card-header>
-		<!-- <div mat-card-avatar
+<div class="flex-container"
+	 fxLayout="column"
+	 fxLayoutAlign="space-between"
+	 id="summary">
+	<mat-card>
+		<mat-card-header>
+			<!-- <div mat-card-avatar
 			 [ngStyle]="{'background-image': 'url(' + aboutInfo.picture + ')', 'background-size': 'cover'  }">
 			</div> -->
-		<div mat-card-avatar
-			 class="profile-header-image">
-		</div>
-		<mat-card-title>
-			<span matBadge="VK"
-				  matBadgeOverlap="false"
-				  matBadgeColor="primary">{{aboutInfo?.name}}
+			<div mat-card-avatar
+				 class="profile-header-image">
+			</div>
+			<mat-card-title>
+				<span matBadge="VK"
+					  matBadgeOverlap="false"
+					  matBadgeColor="primary">{{aboutInfo?.name}}
+				</span>
+			</mat-card-title>
+			<span>
+				<mat-icon matTooltip="Share it"
+						  matTooltipPosition="below"
+						  class="share-icon"
+						  (click)="openShareSheet()">share</mat-icon>
 			</span>
-		</mat-card-title>
-		<span>
-			<mat-icon matTooltip="Share it"
-					  matTooltipPosition="below"
-					  class="share-icon"
-					  (click)="openShareSheet()">share</mat-icon>
-		</span>
-		<span class="empty-spacer"></span>
+			<span class="empty-spacer"></span>
 
-		<mat-card-subtitle>{{ aboutInfo?.label }}</mat-card-subtitle>
-	</mat-card-header>
-	<!--  <img mat-card-image src="assets/images/6FA036AA-EC2C-4FAF-A37D-8E2C3DAB5CE8.jpeg" alt="Technologies"> -->
-	<mat-card-content>
-		<!-- <p>{{ aboutInfo?.summary }}</p> -->
-		<p id="summary"
-		   [innerHTML]="aboutInfo?.summary">
-		</p>
-		<a href="https://stackoverflow.com/users/4316707/ngcoder"
-		   rel="noreferrer"><img [src]="soThemeURL"
-				 alt="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-				 title="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers" /></a>
-	</mat-card-content>
-	<!-- <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions> -->
-</mat-card>
+			<mat-card-subtitle>{{ aboutInfo?.label }}</mat-card-subtitle>
+		</mat-card-header>
+		<!--  <img mat-card-image src="assets/images/6FA036AA-EC2C-4FAF-A37D-8E2C3DAB5CE8.jpeg" alt="Technologies"> -->
+		<mat-card-content>
+			<!-- <p>{{ aboutInfo?.summary }}</p> -->
+			<p [innerHTML]="aboutInfo?.summary">
+			</p>
+			<mat-divider [inset]="true"></mat-divider>
+			<div class="space">
+				<p>My favourite thing to spend time is contributing to online developer community,
+					whenever I find time from my work I spend my time on Stackoverflow answering problems.</p>
+				<a href="https://stackoverflow.com/users/4316707/ngcoder"
+				   rel="noreferrer"><img [src]="soThemeURL"
+						 alt="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
+						 title="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers" /></a>
+			</div>
+			<div class="space">
+				<p> I also write blogposts about Angular Js and Eclipselink ORM
+					<a href="https://www.gitam.edu/"
+					   aria-label="site link"
+					   target="_blank"
+					   rel="nofollow noopener noreferrer">@ngcoderscope</a>. I'm planning to start writing about software design patterns and more about Angular.
+				</p>
+			</div>
+		</mat-card-content>
+
+	</mat-card>
+
+	<mat-card class="middle">
+
+		<mat-card-header>
+			<mat-card-title>Let's talk. Ping me via
+				<a aria-label="Twitter link"
+				   href="https://twitter.com/vikramKadiam"
+				   target="_blank"
+				   rel="nofollow noopener noreferrer">
+					Twitter</a>
+				or
+				<a aria-label="LinkedIn link"
+				   href="https://www.linkedin.com/in/vikram-kadiam/"
+				   target="_blank"
+				   rel="nofollow noopener noreferrer">
+					LinkedIn</a>
+			</mat-card-title>
+			<mat-card-subtitle>Wanna talk Tech? Liked my profile? or my site? or Just drop in to say Hi!</mat-card-subtitle>
+		</mat-card-header>
+		<!-- <div class="space">
+			<h1>Let's talk. Ping me via Twitter DMs or LinkedIn messages.</h1>
+			<h2>The easiest way to get my attention is to start with a comment on one of my blog posts.</h2>
+		</div> -->
+	</mat-card>
+</div>
