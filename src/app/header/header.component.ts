@@ -1,3 +1,4 @@
+import { Image } from './../services/overlay.service';
 import { Component, OnInit } from "@angular/core";
 import { SvgIconService } from "../services/svg-icon.service";
 import { ThemeService } from "../services/theme.service";
@@ -32,9 +33,11 @@ export class HeaderComponent implements OnInit {
 	}
 
 	showThemeOverlay() {
+		let img = this.toggleDarkMode ? THEME_IMAGES[1] : THEME_IMAGES[0];
 		let overlayDialogConfig = {
 			hasBackdrop: true,
 			backdropClass: this.toggleDarkMode ? 'dark-backdrop' : 'white-backdrop',
+			image: img
 		}
 		let dialogRef: OverlayDialogRef = this.overlayDialog.open(overlayDialogConfig);
 
@@ -48,3 +51,8 @@ export class HeaderComponent implements OnInit {
 	}
 
 }
+
+export const THEME_IMAGES = [
+	{ name: 'Lights_ON', url: 'https://img.icons8.com/fluent/96/000000/light-on.png' },
+	{ name: 'Lights_OFF', url: 'https://img.icons8.com/officel/80/000000/light-off.png' },
+];

@@ -1,12 +1,18 @@
-import { Injectable, Inject } from '@angular/core';
+import { Injectable, Inject, InjectionToken, Injector } from '@angular/core';
 import { Overlay, OverlayConfig } from '@angular/cdk/overlay';
-import { ComponentPortal } from '@angular/cdk/portal';
+import { ComponentPortal, PortalInjector } from '@angular/cdk/portal';
 import { OverlayComponent, OverlayDialogRef } from '../overlay/overlay.component';
 
+export const OVERLAY_IMG = new InjectionToken<Image>('OVERLAY_IMG');
+export interface Image {
+  name: string;
+  url: string;
+}
 interface OverlayDialogConfig {
   panelClass?: string;
   hasBackdrop?: boolean;
   backdropClass?: string;
+  image?: Image;
 }
 
 const DEFAULT_CONFIG: OverlayDialogConfig = {
@@ -19,7 +25,7 @@ const DEFAULT_CONFIG: OverlayDialogConfig = {
 @Injectable()
 export class OverlayService {
 
-  constructor(
+  constructor(private injector: Injector,
     private overlay: Overlay) { }
 
   open(config: OverlayDialogConfig = {}) {
@@ -32,11 +38,13 @@ export class OverlayService {
     // Instantiate remote control
     const dialogRef = new OverlayDialogRef(overlayRef);
 
+    const injector = this.createInjector(config, dialogRef);
+
     // Create ComponentPortal that can be attached to a PortalHost
-    const filePreviewPortal = new ComponentPortal(OverlayComponent);
+    const containerPortal = new ComponentPortal(OverlayComponent, null, injector);
 
     // Attach ComponentPortal to PortalHost
-    overlayRef.attach(filePreviewPortal);
+    overlayRef.attach(containerPortal);
 
     return dialogRef;
   }
@@ -61,5 +69,14 @@ export class OverlayService {
     });
 
     return overlayConfig;
+  }
+
+  private createInjector(config: OverlayDialogConfig, dialogRef: OverlayDialogRef): PortalInjector {
+    const injectionTokens = new WeakMap();
+
+    injectionTokens.set(OverlayDialogRef, dialogRef);
+    injectionTokens.set(OVERLAY_IMG, config.image);
+
+    return new PortalInjector(this.injector, injectionTokens);
   }
 }

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { OverlayRef } from '@angular/cdk/overlay';
+import { OVERLAY_IMG } from '../services/overlay.service';
 
 
 @Component({
@@ -9,7 +10,8 @@ import { OverlayRef } from '@angular/cdk/overlay';
 })
 export class OverlayComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialogRef: OverlayDialogRef,
+    @Inject(OVERLAY_IMG) public image: any) { }
 
   ngOnInit() {
   }
