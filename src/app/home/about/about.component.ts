@@ -11,7 +11,10 @@ import { ShareDataService } from 'src/app/services/share-data.service';
 	styleUrls: ["./about.component.css"],
 })
 export class AboutComponent implements OnInit, OnDestroy {
+
 	aboutInfo: any;
+	eduInfo: any;
+	projects: any;
 	soBadgeURL: String;
 	soThemeURL: String;
 	profileInfo: {};
@@ -23,8 +26,8 @@ export class AboutComponent implements OnInit, OnDestroy {
 		private readonly themeService: ThemeService,
 		private dataService: ShareDataService
 	) {
-		this.soBadgeURL = "https://stackoverflow.com/users/flair/4316707.png";
-		this.soThemeURL = "https://stackoverflow.com/users/flair/4316707.png?theme=clean";
+		// this.soBadgeURL = "https://stackoverflow.com/users/flair/4316707.png";
+		// this.soThemeURL = "https://stackoverflow.com/users/flair/4316707.png?theme=clean";
 	}
 
 	openShareSheet(): void {
@@ -35,7 +38,7 @@ export class AboutComponent implements OnInit, OnDestroy {
 		//load about section by fetching profile details
 		this.loadProfileInfo();
 		//set SO badge theme
-		this.setSOBadgeTheme();
+		//this.setSOBadgeTheme(); /* Stopping SO theme switch for while till we figure out best place for it*/
 	}
 
 	/**
@@ -45,6 +48,8 @@ export class AboutComponent implements OnInit, OnDestroy {
 		this.dataService.getProfileInfo().subscribe((data: any) => {
 			this.profileInfo = data;
 			this.aboutInfo = data.basics;
+			this.eduInfo = data.education[0];
+			this.projects = data.projects;
 			//send the profile data to other components
 			this.dataService.sendProfileInfo(this.profileInfo);
 		});

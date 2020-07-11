@@ -2,6 +2,7 @@
 	 fxLayout="column"
 	 fxLayoutAlign="space-between"
 	 id="summary">
+	<!-- About section -->
 	<mat-card>
 		<mat-card-header>
 			<!-- <div mat-card-avatar
@@ -26,19 +27,17 @@
 
 			<mat-card-subtitle>{{ aboutInfo?.label }}</mat-card-subtitle>
 		</mat-card-header>
-		<!--  <img mat-card-image src="assets/images/6FA036AA-EC2C-4FAF-A37D-8E2C3DAB5CE8.jpeg" alt="Technologies"> -->
 		<mat-card-content>
 			<!-- <p>{{ aboutInfo?.summary }}</p> -->
 			<p [innerHTML]="aboutInfo?.summary">
 			</p>
-			<mat-divider [inset]="true"></mat-divider>
-			<div class="space">
+
+			<!-- <div class="space">
 				<p>My favourite thing to spend time is contributing to online developer community,
 					whenever I find time from my work I spend my time on Stackoverflow answering problems.</p>
 				<a href="https://stackoverflow.com/users/4316707/ngcoder"
 				   rel="nofollow noopener noreferrer"><img [src]="soThemeURL"
-						 alt="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-						 title="profile for ngCoder at Stack Overflow, Q&amp;A for professional and enthusiast programmers" /></a>
+						 alt="profile for ngCoder @ SO" /></a>
 			</div>
 			<div class="space">
 				<p> I also write blogposts about Angular Js and Eclipselink ORM
@@ -47,15 +46,84 @@
 					   target="_blank"
 					   rel="nofollow noopener noreferrer">@ngcoderscope</a>. I'm planning to start writing about software design patterns and more about Angular.
 				</p>
-			</div>
+			</div> -->
 		</mat-card-content>
 
 	</mat-card>
 
-	<mat-card class="middle">
-
+	<!-- Projects section -->
+	<mat-card>
 		<mat-card-header>
-			<mat-card-title>Let's talk. Ping me via
+			<mat-card-title>
+				Projects
+			</mat-card-title>
+			<mat-card-subtitle>
+				<a href="https://github.com/KVikram"
+				   target="_blank"
+				   rel="nofollow noopener noreferrer">GitHub</a>
+			</mat-card-subtitle>
+		</mat-card-header>
+		<mat-card-content>
+			<mat-card *ngFor="let project of projects">
+				<mat-card-header>
+					<mat-card-title>
+						{{project?.displayName}}
+					</mat-card-title>
+					<mat-card-subtitle>
+						<a mat-icon-button
+						   aria-label="Github Icon"
+						   href="{{project?.githubUrl}}"
+						   target="_blank"
+						   rel="nofollow noopener noreferrer">
+							<mat-icon class="example-icon"
+									  svgIcon="github"></mat-icon>
+						</a>
+						<a *ngIf="project?.website"
+						   mat-icon-button
+						   aria-label="Launch Icon"
+						   href="{{project?.website}}"
+						   target="_blank"
+						   rel="nofollow noopener noreferrer">
+							<mat-icon class="example-icon">launch</mat-icon>
+						</a>
+					</mat-card-subtitle>
+				</mat-card-header>
+				<mat-card-content>
+					<p>{{project?.summary}}</p>
+					<mat-chip-list aria-label="Project languages">
+						<mat-chip *ngFor="let lang of project?.languages"
+								  color="accent"
+								  aria-label="language"
+								  selected>{{lang}} </mat-chip>
+						<mat-chip *ngFor="let lib of project?.libraries"
+								  color="accent"
+								  aria-label="library"
+								  selected>{{lib}} </mat-chip>
+					</mat-chip-list>
+				</mat-card-content>
+			</mat-card>
+		</mat-card-content>
+	</mat-card>
+
+	<!-- Education section -->
+	<mat-card>
+		<mat-card-header>
+			<mat-card-title>
+				{{eduInfo?.area}}
+			</mat-card-title>
+			<mat-card-subtitle>
+				<a href="{{eduInfo?.website}}"
+				   target="_blank"
+				   rel="nofollow noopener noreferrer">{{eduInfo?.institution}}</a>
+			</mat-card-subtitle>
+		</mat-card-header>
+		<mat-card-content>{{eduInfo?.description}} </mat-card-content>
+	</mat-card>
+
+	<!-- Contact section -->
+	<mat-card class="middle">
+		<mat-card-header>
+			<mat-card-title>Let's talk.Ping me on
 				<a aria-label="Twitter link"
 				   href="https://twitter.com/vikramKadiam"
 				   target="_blank"
@@ -70,9 +138,5 @@
 			</mat-card-title>
 			<mat-card-subtitle>Wanna talk Tech? Liked my profile? or my site? or Just drop in to say Hi!</mat-card-subtitle>
 		</mat-card-header>
-		<!-- <div class="space">
-			<h1>Let's talk. Ping me via Twitter DMs or LinkedIn messages.</h1>
-			<h2>The easiest way to get my attention is to start with a comment on one of my blog posts.</h2>
-		</div> -->
 	</mat-card>
 </div>
