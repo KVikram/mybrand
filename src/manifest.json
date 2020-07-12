@@ -6,16 +6,6 @@
 	"display": "standalone",
 	"Scope": "/home",
 	"start_url": "/home",
-	"shortcuts": [{
-		"name": "About",
-		"short_name": "About",
-		"description": "View about Vikram",
-		"url": "/home",
-		"icons": [{
-			"src": "assets/icons/icon-152x152.png",
-			"sizes": "192x192"
-		}]
-	}],
 	"icons": [
 
 		{
