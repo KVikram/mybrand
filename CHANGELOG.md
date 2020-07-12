@@ -1,3 +1,43 @@
+## 3.0.0 (2020-07-12)
+
+##### Chores
+
+* **readme:** Updated readme logo link ([1cc61042](https://github.com/KVikram/mybrand/commit/1cc610426cff621e8405ff4478f7c46e29226232))
+* **logos:** Changed site preview logo ([b55345f7](https://github.com/KVikram/mybrand/commit/b55345f7a03da7642a6b30b5c9c6f05b9862398d))
+* **images:** Updated site preview ([182b0caf](https://github.com/KVikram/mybrand/commit/182b0caf527173c86f273963f146b388ea8f0fda))
+* **license:** Added MIT LICENSE to the repo ([6844db8e](https://github.com/KVikram/mybrand/commit/6844db8ea9353fb5ba750323be97cefa58de53ad))
+
+##### New Features
+
+* **about:** Refined about section with project details and removed SO theming ([79b1ac1d](https://github.com/KVikram/mybrand/commit/79b1ac1dc0382fcf57cebaab65a76be45d8a9278))
+
+##### Bug Fixes
+
+* **pwa:** Removed shortcuts from manifest ([e47ccb0c](https://github.com/KVikram/mybrand/commit/e47ccb0c47c03de9d6a8f0a4fc0e0ab38ae89667))
+* **images:** Fixed image names and added 152px - removed old icons ([992a4fa7](https://github.com/KVikram/mybrand/commit/992a4fa76f36cf906cb719c9c128fc39f50b73c3))
+* **links:** Fixed wrong links and rel attribute ([7ab22dc3](https://github.com/KVikram/mybrand/commit/7ab22dc38dc827d5420e5eb47a89ca596a240933))
+* **performance:** added preconnect and dns-prefetch for faster downloads ([4ab33c76](https://github.com/KVikram/mybrand/commit/4ab33c7654193295a2d43fa406912c55cedaeefa))
+* **home:** Made home page details center to viewport ([f233ba43](https://github.com/KVikram/mybrand/commit/f233ba43f3ee628ec73275f492fbc14746cd4742))
+
+##### Performance Improvements
+
+* **sw:** added google fonts & mat icons url in service worker cache ([5fd0f4c3](https://github.com/KVikram/mybrand/commit/5fd0f4c34af04226b3cfac804963037e5b5acde1))
+* **lighthouse:** Improved font loading by display swap ([e2f3d568](https://github.com/KVikram/mybrand/commit/e2f3d568e12f1497c7e1db7b7d602ad9ee8c47d9))
+
+##### Refactors
+
+* **about:** Removing SO related stuff and unused css ([bbfe4ba9](https://github.com/KVikram/mybrand/commit/bbfe4ba991c6cde27751173b096099e7b0fe7a53))
+* **headers:** Added _headers for netlify ([42cffc1e](https://github.com/KVikram/mybrand/commit/42cffc1e1c0f93b6775ea7ab65c38a46f59ed273))
+
+##### Code Style Changes
+
+* **home:** Added motto to home page ([80dcd433](https://github.com/KVikram/mybrand/commit/80dcd4331e60a916ded84d9090f4198c37b75471))
+
+##### Other Changes (styles)
+
+* **pwa:** Added new icons and resolutions for PWA ([17e1fcd6](https://github.com/KVikram/mybrand/commit/17e1fcd68ff33d0eca5e3652761edfb2f0ab875f))
+* **home:** Changed <h2> to <p> tag ([7ad94ed9](https://github.com/KVikram/mybrand/commit/7ad94ed9bd02cabe0842135cde2e05319d875654))
+
 #### v1.2.0 (2020-07-01)
 
 ##### New Features
@@ -65,57 +105,57 @@
 
 * //github.com/KVikram/mybrand (9539b1d3)
 
--assigned themingSubscription for unsub on destroy
--removed unused code
--added comments
--commented mat-dividers for now
--added structured data for SEO
--SEO related changes
--added #id to compnenets
--added mat-fab class for scroll up icon
--moved Gtag script to bottom, removed Gfont wt 300,OG/Twitter site settings
--added tooltips
--moved flex spacer to style.css
--added new C scrollUp for scrolling to top from bottom content
--introduced robots.txt
--optimised images for faster loading and changes in json for same
--removed unused css and code refactor
--added alt text for image and aria for button
--added some settings for lighthouse errors
--introduced new C -blogposts from WP
--moved http calls to ngOnInit() & added mat divider for tech stack
--added '?' in ngFor object to avoid undefined errors and moved http calls to ngOnInit()
--added apple touch icons for more resolutions
--split 'Micro services' to resolve the text overflow issue
--code indentation with beautifier
--aligned theme toggle icons properly inline with media icons
--code indent
--added hidden branding
--destroy method to avoid memory leaks
--added dev label to build number
--custom typography added to site
--removed 'Level' label for better UI
--changed share link to website link
--added toggle to light and dark mode --changed templates to reflect proper theme
--changed PWA icons from logo without name and theme to dark
--changed angular theme to deeppurple-amber for ight mode
--updated readme for netlify
--added SO badge in about section
--introduced new comp techstack and added icons for diff skills from icons8
--code indentation/refactor and renamed ngFor object
--removed mat-grid-list and moved to flex layout for RWD
--added gtag code for google analytics
--added hammerjs import
--added new logo with favicon and images for PWA along with theming
--Merge branch 'master' of https://github.com/KVikram/mybrand
--added redirects for netlify deploy
--Update README.md
--added mat icon & steplabel and header custom styles
--added flex layout module and removed unwanted angular material mod deps
--changed the dark mode icon
--Introducing timeline module --added new component and changes around it
--added vscode settings to ignore
--added app version(build number) code to the footer
--added comments for theme icons
--Initial commit v0.1 of #mybrand
--Initial commit
+* assigned themingSubscription for unsub on destroy
+* removed unused code
+* added comments
+* commented mat-dividers for now
+* added structured data for SEO
+* SEO related changes
+* added #id to compnenets
+* added mat-fab class for scroll up icon
+* moved Gtag script to bottom, removed Gfont wt 300,OG/Twitter site settings
+* added tooltips
+* moved flex spacer to style.css
+* added new C scrollUp for scrolling to top from bottom content
+* introduced robots.txt
+* optimised images for faster loading and changes in json for same
+* removed unused css and code refactor
+* added alt text for image and aria for button
+* added some settings for lighthouse errors
+* introduced new C -blogposts from WP
+* moved http calls to ngOnInit() & added mat divider for tech stack
+* added '?' in ngFor object to avoid undefined errors and moved http calls to ngOnInit()
+* added apple touch icons for more resolutions
+* split 'Micro services' to resolve the text overflow issue
+* code indentation with beautifier
+* aligned theme toggle icons properly inline with media icons
+* code indent
+* added hidden branding
+* destroy method to avoid memory leaks
+* added dev label to build number
+* custom typography added to site
+* removed 'Level' label for better UI
+* changed share link to website link
+* added toggle to light and dark mode --changed templates to reflect proper theme
+* changed PWA icons from logo without name and theme to dark
+* changed angular theme to deeppurple-amber for ight mode
+* updated readme for netlify
+* added SO badge in about section
+* introduced new comp techstack and added icons for diff skills from icons8
+* code indentation/refactor and renamed ngFor object
+* removed mat-grid-list and moved to flex layout for RWD
+* added gtag code for google analytics
+* added hammerjs import
+* added new logo with favicon and images for PWA along with theming
+* Merge branch 'master' of https://github.com/KVikram/mybrand
+* added redirects for netlify deploy
+* Update README.md
+* added mat icon & steplabel and header custom styles
+* added flex layout module and removed unwanted angular material mod deps
+* changed the dark mode icon
+* Introducing timeline module --added new component and changes around it
+* added vscode settings to ignore
+* added app version(build number) code to the footer
+* added comments for theme icons
+* Initial commit v0.1 of #mybrand
+* Initial commit
