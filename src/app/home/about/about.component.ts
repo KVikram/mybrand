@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
-import { MatBottomSheet, MatBottomSheetRef } from "@angular/material";
-import { MatSnackBar } from "@angular/material";
+import { MatBottomSheet, MatBottomSheetRef } from "@angular/material/bottom-sheet";
+import { MatSnackBar } from "@angular/material/snack-bar";
 import { ThemeService } from "src/app/services/theme.service";
 import { Subscription } from "rxjs";
 import { ShareDataService } from 'src/app/services/share-data.service';
