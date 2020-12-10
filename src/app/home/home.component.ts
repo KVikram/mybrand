@@ -9,10 +9,10 @@ import { Subscription } from 'rxjs';
 
 export class HomeComponent implements OnInit, OnDestroy {
 
-  @ViewChild('about', { read: ElementRef }) about: ElementRef;
-  @ViewChild('skills', { read: ElementRef }) skills: ElementRef;
-  @ViewChild('timeline', { read: ElementRef }) timeline: ElementRef;
-  @ViewChild('articles', { read: ElementRef }) articles: ElementRef;
+  @ViewChild('about', { read: ElementRef, static: true }) about: ElementRef;
+  @ViewChild('skills', { read: ElementRef, static: true }) skills: ElementRef;
+  @ViewChild('timeline', { read: ElementRef, static: true }) timeline: ElementRef;
+  @ViewChild('articles', { read: ElementRef, static: true }) articles: ElementRef;
 
   isDark: boolean;
   themingSubscription: Subscription;
