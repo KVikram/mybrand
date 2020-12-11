@@ -7,7 +7,7 @@
   vikramkadiam.com
 </h1>
 <p align="center">
-  My first portfolio website <a href="https://vikramkadiam.netlify.app" target="_blank">vikramKadiam.com</a> built with <a href="https://v7.angular.io/guide/quickstart" target="_blank">Angular v7</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  My first portfolio website <a href="https://vikramkadiam.netlify.app" target="_blank">vikramKadiam.com</a> built with <a href="https://v10.angular.io/guide/quickstart" target="_blank">Angular v10</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 
 ![demo](https://raw.githubusercontent.com/KVikram/mybrand/master/src/assets/images/VK_site_preview.png)

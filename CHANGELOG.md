@@ -1,3 +1,25 @@
+## 4.0.0 (2020-12-11)
+
+##### Breaking Changes
+
+* **material:**
+  * upgrade to ng material/flex v10 ([89b4ee07](https://github.com/KVikram/mybrand/commit/89b4ee07c4238829a59215a19d8fb09b7be4e857))
+  * upgrade ng material/flex to v9 ([c3144c56](https://github.com/KVikram/mybrand/commit/c3144c569382992e3bea0623076dd4e9688fae93))
+* **angular:**
+  * upgrade to angular v10 ([50ad1755](https://github.com/KVikram/mybrand/commit/50ad175505c07c91f8552945c778714193c46ef8))
+  * upgrade to angular v9 ([2433b848](https://github.com/KVikram/mybrand/commit/2433b8487ae03643c642395842ae83a5df2b12c1))
+  * upgrade to v8 angular material ([6ebe5d63](https://github.com/KVikram/mybrand/commit/6ebe5d63c55345c5efbfd6a9b24b51e1673dbf7a))
+  * v8 upgrade ([892733f5](https://github.com/KVikram/mybrand/commit/892733f5082ef933d909f7304fdfeb51aca14e55))
+* **flex:** upgraded flexlayout to v8 ([5f7105e7](https://github.com/KVikram/mybrand/commit/5f7105e7d521692363627ea439e2a39e1984b416))
+
+##### Chores
+
+* **readme:** Updated angular version number ([ccd7a4c7](https://github.com/KVikram/mybrand/commit/ccd7a4c763d3251367d72dee14e0c5293291fddc))
+
+##### Bug Fixes
+
+* **browserlist:** Renamed file acc to angular v10 ([e93459b6](https://github.com/KVikram/mybrand/commit/e93459b6a0fbceb1df3e86beab928b8851509cd9))
+
 ## 3.0.0 (2020-07-12)
 
 ##### Chores
