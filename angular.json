@@ -28,8 +28,7 @@
 							"src/sitemap.xml"
 						],
 						"styles": ["src/styles.css", "src/theme.scss"],
-						"scripts": [],
-						"es5BrowserSupport": true
+						"scripts": []
 					},
 					"configurations": {
 						"production": {
