@@ -48,7 +48,6 @@ import { OverlayService } from './services/overlay.service';
 		}),
 		FlexLayoutModule,
 	],
-	entryComponents: [ShareMenuSheet, OverlayComponent],
 	providers: [
 		{
 			provide: STEPPER_GLOBAL_OPTIONS,
