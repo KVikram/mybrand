@@ -1,4 +1,3 @@
-import { Image } from './../services/overlay.service';
 import { Component, OnInit } from "@angular/core";
 import { SvgIconService } from "../services/svg-icon.service";
 import { ThemeService } from "../services/theme.service";

@@ -1,13 +1,9 @@
+import { Image, OVERLAY_IMG } from '../overlay/overlay';
 import { Injectable, Inject, InjectionToken, Injector } from '@angular/core';
 import { Overlay, OverlayConfig } from '@angular/cdk/overlay';
 import { ComponentPortal, PortalInjector } from '@angular/cdk/portal';
 import { OverlayComponent, OverlayDialogRef } from '../overlay/overlay.component';
 
-export const OVERLAY_IMG = new InjectionToken<Image>('OVERLAY_IMG');
-export interface Image {
-  name: string;
-  url: string;
-}
 interface OverlayDialogConfig {
   panelClass?: string;
   hasBackdrop?: boolean;

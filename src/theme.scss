@@ -31,9 +31,9 @@ $mybrand-app-theme: mat-light-theme($mybrand-app-primary,
 	$mybrand-app-accent,
 	$mybrand-app-warn);
 
-.mybrand-light-theme {
-	@include angular-material-theme($mybrand-app-theme);
-}
+// .mybrand-light-theme {
+// 	@include angular-material-color($mybrand-app-theme);
+// }
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -48,7 +48,7 @@ $mybrand-app-dark-theme: mat-dark-theme($mybrand-app-dark-primary,
 	$mybrand-app-dark-warn);
 
 .mybrand-dark-theme {
-	@include angular-material-theme($mybrand-app-dark-theme);
+	@include angular-material-color($mybrand-app-dark-theme);
 }
 
 .light-primary-background {
