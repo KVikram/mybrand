@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { OverlayRef } from '@angular/cdk/overlay';
-import { OVERLAY_IMG } from '../services/overlay.service';
+import { OVERLAY_IMG } from './overlay';
 
 
 @Component({
