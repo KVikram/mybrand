@@ -1,3 +1,12 @@
+## 4.1.0 (2020-12-12)
+
+
+##### Bug Fixes
+
+* **config:** Added missing config details ([a26d395e](https://github.com/KVikram/mybrand/commit/a26d395e3aa1397a5e1b7929b443793babf477aa))
+* **overlay:** removed circular reference ([bdbf3748](https://github.com/KVikram/mybrand/commit/bdbf3748f4afceb418f722826639addd043894f5))
+* **theme:** removed duplicate theme initialization ([09503bf5](https://github.com/KVikram/mybrand/commit/09503bf5f2f4c15c531843441aabb34731daccb8))
+
 ## 4.0.0 (2020-12-11)
 
 ##### Breaking Changes
