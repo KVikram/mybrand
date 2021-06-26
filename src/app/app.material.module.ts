@@ -6,9 +6,10 @@ import { CdkStepperModule } from "@angular/cdk/stepper";
 import { CdkTableModule } from "@angular/cdk/table";
 import { CdkTreeModule } from "@angular/cdk/tree";
 import { NgModule } from "@angular/core";
-import { 
-//MatAutocompleteModule,
-MatBadgeModule } from "@angular/material/badge";
+import {
+  //MatAutocompleteModule,
+  MatBadgeModule
+} from "@angular/material/badge";
 import { MatBottomSheetModule } from "@angular/material/bottom-sheet";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
@@ -16,37 +17,44 @@ import { MatCardModule } from "@angular/material/card";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatChipsModule } from "@angular/material/chips";
 import { MatRippleModule } from "@angular/material/core";
-import { 
-//MatDatepickerModule,
-//MatDialogModule,
-MatDividerModule } from "@angular/material/divider";
+import {
+  //MatDatepickerModule,
+  //MatDialogModule,
+  MatDividerModule
+} from "@angular/material/divider";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatIconModule } from "@angular/material/icon";
 import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { MatMenuModule } from "@angular/material/menu";
-import { 
-//MatNativeDateModule,
-//MatPaginatorModule,
-MatProgressBarModule } from "@angular/material/progress-bar";
-import { 
-//MatProgressSpinnerModule,
-MatRadioModule } from "@angular/material/radio";
-import { 
-//MatSelectModule,
-//MatSidenavModule,
-//MatSliderModule,
-MatSlideToggleModule } from "@angular/material/slide-toggle";
+import {
+  //MatNativeDateModule,
+  //MatPaginatorModule,
+  MatProgressBarModule
+} from "@angular/material/progress-bar";
+import {
+  //MatProgressSpinnerModule,
+  MatRadioModule
+} from "@angular/material/radio";
+import {
+  //MatSelectModule,
+  //MatSidenavModule,
+  //MatSliderModule,
+  MatSlideToggleModule
+} from "@angular/material/slide-toggle";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
-import { 
-//MatSortModule,
-MatStepperModule } from "@angular/material/stepper";
-import { 
-//MatTableModule,
-//MatTabsModule,
-MatToolbarModule } from "@angular/material/toolbar";
+import {
+  //MatSortModule,
+  MatStepperModule
+} from "@angular/material/stepper";
+import {
+  //MatTableModule,
+  //MatTabsModule,
+  MatToolbarModule
+} from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @NgModule({
   imports: [
@@ -92,6 +100,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
     //MatTreeModule,
     PortalModule,
     ScrollingModule,
+    ClipboardModule
   ],
   exports: [
     A11yModule,
@@ -136,6 +145,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
     // MatTreeModule,
     PortalModule,
     ScrollingModule,
+    ClipboardModule
   ],
 })
 export class AppMaterialModule { }
