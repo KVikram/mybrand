@@ -4,6 +4,7 @@ import { MatSnackBar } from "@angular/material/snack-bar";
 import { ThemeService } from "src/app/services/theme.service";
 import { Subscription } from "rxjs";
 import { ShareDataService } from 'src/app/services/share-data.service';
+import { Clipboard } from '@angular/cdk/clipboard';
 
 @Component({
 	selector: "app-about",
@@ -78,13 +79,16 @@ export class AboutComponent implements OnInit, OnDestroy {
 export class ShareMenuSheet {
 	constructor(
 		private bottomSheetRef: MatBottomSheetRef<ShareMenuSheet>,
-		private snackBar: MatSnackBar
+		private snackBar: MatSnackBar,
+		private clipboard: Clipboard
 	) { }
 
 	copyLink(link: string): void {
 		this.bottomSheetRef.dismiss();
 		//event.preventDefault();
-		this.copyMessage(link);
+		// this.copyMessage(link);
+		this.clipboard.copy(link);
+
 		this.openCopyMsg("Link is copied");
 	}
 
